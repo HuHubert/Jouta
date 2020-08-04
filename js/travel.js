@@ -22,18 +22,21 @@
     travel_sort_scrollHandler();
     // window.addEventListener("scroll", travel_sort_scrollHandler);
     // }
-    //排序變化總版，注意JS.CSS不吃Hex碼
+    //排序變化，注意JS.CSS不吃Hex碼
     $("body").on('click', "#travel_sort .sort li", function () {
+        $("#row span").remove();
+        $("#row div").append($(this).html());
+        $("#row #temp").remove();
         if ($(this).css('border-color') == 'rgb(250, 225, 7)') {    //第2n-1次點擊           
             $(this).css('border-color', 'rgb(250, 225, 6)');
             $("#temp").remove();
-            if ($(this).attr('id') == "begin") {
+            if ($(this).attr('id') == "07") {
                 $(this).append("<span id='temp'>遠－>近</span>");
             }
-            else if ($(this).attr('id') == "end") {
+            else if ($(this).attr('id') == "08") {
                 $(this).append("<span id='temp'>慢－>快</span>");
             }
-            else if ($(this).attr('id') == "site") {
+            else if ($(this).attr('id') == "03") {
                 $(this).append("<span id='temp'>南－>北</span>");
             }
             else {
@@ -43,13 +46,13 @@
         else {
             $(this).css('border-color', 'rgb(250, 225, 7)');    //第2*n次點擊
             $("#temp").remove();
-            if ($(this).attr('id') == "begin") {
+            if ($(this).attr('id') == "07") {
                 $(this).append("<span id='temp'>近－>遠</span>");
             }
-            else if ($(this).attr('id') == "end") {
+            else if ($(this).attr('id') == "08") {
                 $(this).append("<span id='temp'>快－>慢</span>");
             }
-            else if ($(this).attr('id') == "site") {
+            else if ($(this).attr('id') == "03") {
                 $(this).append("<span id='temp'>北－>南</span>");
             }
             else {
