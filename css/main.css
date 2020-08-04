@@ -2,6 +2,13 @@
 .topbanner{
   position: relative;
 }
+a{
+  color: #fff;
+}
+a:hover{
+  color: #fff;
+  text-decoration: none;
+}
 /* 主視覺 */
 .v-title {
     max-width: 940px;
