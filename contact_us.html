@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於 | Jouta</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/聯絡我們.css">
+    <style>
+        span {
+            color: red;
+            font-size: 80%;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light" id="main">
+            <a class="navbar-brand" href="main.html">
+                <img src="images/joutalogo_black.png" alt="" width="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="main.html">首頁 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eat.html">找飯局</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="travel.html">找旅遊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog_main.html">找文章</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">登入</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">註冊</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <h1>聯絡我們</h1>
+    <p style="text-align: center">我們十分重視您的寶貴意見與問題，我們將竭誠儘速為您服務</p>
+
+    <!-- <div>
+            <img src="images/Customerservice.JPG" alt="" width="100%" height="500px" >
+            <div class="words">聯絡我們</div>
+
+        </div> -->
+
+    <div class="container ">
+
+        <fieldset>
+
+            <legend><img src="images/letter.jpg" alt="" width="100"></legend>
+
+
+            <div class="st1">
+                <div class="op">
+                    <select name="travel-form">
+                        <option>1.旅遊意見</option>
+                        <option>2.飯局意見</option>
+                        <option>3.文章意見</option>
+                        <option>4.其他意見</option>
+                    </select>
+                </div>
+
+                <div class="st1">
+                    <div class="st2">
+                        <label for="" class="t1">會員帳號：</label>
+                        <input id="帳號" type="" name="" size="40" autofocus onblur="c檢查帳號()"> 
+                        <span id="idac"></span>
+
+
+                    </div>
+                </div>
+
+                <div>
+                    <div class="st1">
+                        <div class="st2">
+                            <label class="t1" for="account1">聯絡人：</label>
+                            <input id="聯絡人" type="" name="name" size="20" width="" onblur="c檢查聯絡人()">
+
+                            <input type="radio" name="gender" ><label>先生</label>
+                            <label>
+                                <input type="radio" name="gender">女士
+                            </label>
+                                <span id="idcp"></span>
+                        </div>
+                            
+                    </div>
+                    
+                </div>
+                <div class="st1">
+                    <div class="st2">
+                        <label for="" class="t1">電子郵件：</label>
+                        <input id="mail" type="email" name="email" size="40" onblur="c檢查mail">
+                        <span id="idmail"></span>
+                    </div>
+                </div>
+                <div class="st1">
+                    <div class="st2">
+                        <label for="" class="t1">電話：</label>
+                        <input id="電話" type="" name="phone" size="40" onblur="c檢查電話()">
+                        <span id="idtal"></span>
+
+                    </div>
+
+                </div>
+
+                <div class="st1">
+                    <div class="st2">
+                        <label class="t1" for="comment1">意見：</label>
+                        <textarea id="意見" cols="40" rows="5" name="comment" onblur="c檢查意見()"></textarea>
+                        <span id="idop"></span>
+                    </div>
+                </div>
+                <div class="sub">
+                    <input type="submit" value="送出">
+                    <input type="reset" value="清除">
+                </div>
+        </fieldset>
+        <p class="pb">本信箱的郵件處理時間為一般工作日上午 8 點 30 分至下午 5 點 30 分</p>
+
+    </div>
+
+
+    <script>
+        function c檢查聯絡人() {
+            let the聯絡人物件 = document.getElementById("聯絡人");
+            let the聯絡人的值 = the聯絡人物件.value;
+            let the聯絡人 = document.getElementById("聯絡人").value;
+            let span聯絡人 = document.getElementById("idcp");
+            let the聯絡人長度 = the聯絡人.length;
+            let flagac1 = false;
+
+            if (the聯絡人 == "")
+                span聯絡人.innerHTML = "*請輸入";
+        }
+    </script>
+
+<script>
+    function c檢查帳號() {
+        let the帳號物件 = document.getElementById("帳號");
+        let the帳號的值 = the帳號物件.value;
+        let the帳號 = document.getElementById("帳號").value;
+        let span帳號 = document.getElementById("idac");
+        let the帳號長度 = the帳號.length;
+        let flagac1 = false;
+
+        if (the帳號 == "")
+            span帳號.innerHTML = "*請輸入";
+    }
+</script>
+
+<script>
+    function c檢查電話() {
+        let the電話物件 = document.getElementById("電話");
+        let the電話的值 = the電話物件.value;
+        let the電話 = document.getElementById("電話").value;
+        let span電話 = document.getElementById("idtal");
+        let the電話長度 = the電話.length;
+        let flagac1 = false;
+
+        if (the電話 == "")
+            span電話.innerHTML = "*請輸入";
+    }
+</script>
+
+<script>
+    function c檢查mail() {
+        let themail物件 = document.getElementById("mail");
+        let themail的值 = themail物件.value;
+        let themail = document.getElementById("mail").value;
+        let spanmail = document.getElementById("idmail");
+        let themail長度 = themail.length;
+        let flagac1 = false;
+
+        if (themail == "")
+            spanmail.innerHTML = "*請輸入";
+    }
+</script>
+
+
+
+<script>
+    function c檢查意見() {
+        let the意見物件 = document.getElementById("意見");
+        let the意見的值 = the意見物件.value;
+        let the意見 = document.getElementById("意見").value;
+        let span意見 = document.getElementById("idop");
+        let the意見長度 = the意見.length;
+        let flagac1 = false;
+
+        if (the意見 == "")
+            span意見.innerHTML = "*請輸入";
+    }
+</script>
+
+
+    <hr>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <div class="container-fluid footer">
+        <p class="text-center mt-2 mb-2">Copyright © 2020 Jouta All rights reserved</p>
+    </div>
+    </div>
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="/navbar/navbar.js"></script>
+    </div>
+
+</body>
+
+</html>

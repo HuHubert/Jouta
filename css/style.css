@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+body{
+    font-family: '微軟正黑體', '標楷體', monospace !important;
+    overflow-x: hidden; 
+}
+html{
+    font-size: 20px;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+/* banner */
+.navbar{
+    z-index: 99;
+    background-color: #fff4c1;
+}
+
+a{
+    color: black;
+    font-weight: bolder;
+}
+
+/* sticky navbar */
+.fixedMenu #main{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer{
+    border-radius: 75% 75%  0% 0%;
+    bottom: 0;
+    position: fixed;
+    font-size: 16px;
+    background-color: #fff4c1;
+    color: black;
+}
