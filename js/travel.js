@@ -22,27 +22,13 @@
         travel_sort_scrollHandler();
         // window.addEventListener("scroll", travel_sort_scrollHandler);
     // }
- 
+    var i=0;
     //排序變化總版，注意JS.CSS不吃Hex碼
     $("body").on('click', "#travel_sort .sort li", function () {
-        if ($(this).css('border-color') == 'rgb(255, 0, 0)') {    //第2n-1次點擊
+        if (i==0) {    //第2n-1次點擊
+            i++;
+            // $(this).css('border-color') == 'rgb(255, 0, 0)'
             $(this).css('border-color', 'rgb(250, 225, 7)');
-            $("#temp").remove();
-            if($(this).attr('id')=="begin"){
-                $(this).append("<span id='temp'>遠－>近</span>");
-            }
-            else if($(this).attr('id')=="end"){
-                $(this).append("<span id='temp'>慢－>快</span>");
-            }
-            else if($(this).attr('id')=="site"){
-                $(this).append("<span id='temp'>南－>北</span>");
-            }
-            else {
-                $(this).append("<span id='temp'>低－>高</span>");
-            }              
-        }
-        else{           
-            $(this).css('border-color', 'rgb(255, 0, 0)');    //第2*n次點擊
             $("#temp").remove();
             if($(this).attr('id')=="begin"){
                 $(this).append("<span id='temp'>近－>遠</span>");
@@ -56,6 +42,24 @@
             else {
                 $(this).append("<span id='temp'>高－>低</span>");
             }
+        }
+        else{        
+            i--;   
+            $(this).css('border-color', 'rgb(250, 225, 7)');    //第2*n次點擊
+            $("#temp").remove();
+            if($(this).attr('id')=="begin"){
+                $(this).append("<span id='temp'>遠－>近</span>");
+            }
+            else if($(this).attr('id')=="end"){
+                $(this).append("<span id='temp'>慢－>快</span>");
+            }
+            else if($(this).attr('id')=="site"){
+                $(this).append("<span id='temp'>南－>北</span>");
+            }
+            else {
+                $(this).append("<span id='temp'>低－>高</span>");
+            }  
+
 
         }
         $(this).siblings().css('border-color', 'transparent');    //剔除未選取排序           
