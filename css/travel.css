@@ -2,9 +2,13 @@ p{
   margin-bottom: 5px;
   text-align: center;
 }
+.btn-secondary{
+  background-color: #222222;
+}
 #travel_sort .sort li{
-  border-style:solid;
-  border-width: 2px;
+  border-bottom: solid;
+  border-top: solid;
+  border-width: 3px;
   width:83.5%
 }
 .modal{
@@ -21,6 +25,17 @@ p{
 }
 .change-max-width-1400 {
   max-width: 1400px;
+}
+.Travel_border{
+  border-style: solid;
+  border-width: 1.3px;
+  border-color: rgba(255,91,69);
+}
+.border-main-color{
+  border-color: rgb(255,91,69);
+}
+.border-second-color{
+  border-color: rgb(255,224,178);
 }
 #temp{
   text-align: right;
