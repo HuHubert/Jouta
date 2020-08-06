@@ -2,11 +2,6 @@ p{
   margin-bottom: 5px;
   text-align: center;
 }
-#travel_sort .sort li{
-  border-style:solid;
-  border-width: 2px;
-  width:83.5%
-}
 .modal{
   padding-right: 0px!important;
 }
@@ -21,9 +16,6 @@ p{
 }
 .change-max-width-1400 {
   max-width: 1400px;
-}
-#temp{
-  text-align: right;
 }
 .fix{
   position:fixed; 
@@ -48,6 +40,9 @@ p{
   -webkit-box-orient: vertical;
 }
  
+#sort{
+  display: flex;
+}
 
 .btn{
   border: 1px solid;
