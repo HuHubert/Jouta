@@ -117,3 +117,48 @@ hr{
     right: 0px;
     position: absolute;
 }
+
+.switchPage{
+    margin: 0 20px;
+}
+
+.popularMemberDiv{
+    background-color: rgb(240, 240, 240);
+}
+
+.memberBlock{
+    width: 30%;
+    height:400px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 2px rgb(200, 200, 200);
+    transition-duration: 1s;
+}
+
+.memberBlock:hover{
+    box-shadow: 0px 0px 4px 15px rgb(235, 235, 235);
+    transition-duration: 1s;
+}
+
+.avatarPart{
+    height: 50%;
+    text-align: center;
+}
+
+.avatarPart .memberName{
+    top: 50%;
+    bottom:50%;
+    transform: translate(0%,200%);
+}
+
+.introducePart{
+    height: 45%;
+    text-align: center;
+}
+
+.avatarPart img{
+    width: 30%;
+    top: 50%;
+    bottom:50%;
+    transform: translate(0%,30%);
+}
