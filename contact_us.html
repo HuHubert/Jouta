@@ -10,13 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/聯絡我們.css">
-    <style>
-        span {
-            color: red;
-            font-size: 80%;
-
-        }
-    </style>
+   
 </head>
 
 <body>
@@ -58,23 +52,15 @@
             </div>
         </nav>
     </div>
-
+    <div class="mt-5"></div>
     <h1>聯絡我們</h1>
     <p style="text-align: center">我們十分重視您的寶貴意見與問題，我們將竭誠儘速為您服務</p>
 
-    <!-- <div>
-            <img src="images/Customerservice.JPG" alt="" width="100%" height="500px" >
-            <div class="words">聯絡我們</div>
 
-        </div> -->
-
-    <div class="container ">
+    <div class="container" style="margin-bottom: 5rem;">
 
         <fieldset>
-
             <legend><img src="images/letter.jpg" alt="" width="100"></legend>
-
-
             <div class="st1">
                 <div class="op">
                     <select name="travel-form">
@@ -90,8 +76,6 @@
                         <label for="" class="t1">會員帳號：</label>
                         <input id="帳號" type="" name="" size="40" autofocus onblur="c檢查帳號()">
                         <span id="idac"></span>
-
-
                     </div>
                 </div>
 
@@ -141,94 +125,7 @@
                 </div>
         </fieldset>
         <p class="pb">本信箱的郵件處理時間為一般工作日上午 8 點 30 分至下午 5 點 30 分</p>
-
     </div>
-
-
-    <script>
-        function c檢查聯絡人() {
-            let the聯絡人物件 = document.getElementById("聯絡人");
-            let the聯絡人的值 = the聯絡人物件.value;
-            let the聯絡人 = document.getElementById("聯絡人").value;
-            let span聯絡人 = document.getElementById("idcp");
-            let the聯絡人長度 = the聯絡人.length;
-            let flagac1 = false;
-
-            if (the聯絡人 == "")
-                span聯絡人.innerHTML = "*請輸入";
-        }
-    </script>
-
-    <script>
-        function c檢查帳號() {
-            let the帳號物件 = document.getElementById("帳號");
-            let the帳號的值 = the帳號物件.value;
-            let the帳號 = document.getElementById("帳號").value;
-            let span帳號 = document.getElementById("idac");
-            let the帳號長度 = the帳號.length;
-            let flagac1 = false;
-
-            if (the帳號 == "")
-                span帳號.innerHTML = "*請輸入";
-        }
-    </script>
-
-    <script>
-        function c檢查電話() {
-            let the電話物件 = document.getElementById("電話");
-            let the電話的值 = the電話物件.value;
-            let the電話 = document.getElementById("電話").value;
-            let span電話 = document.getElementById("idtal");
-            let the電話長度 = the電話.length;
-            let flagac1 = false;
-
-            if (the電話 == "")
-                span電話.innerHTML = "*請輸入";
-        }
-    </script>
-
-    <script>
-        function c檢查mail() {
-            let themail物件 = document.getElementById("mail");
-            let themail的值 = themail物件.value;
-            let themail = document.getElementById("mail").value;
-            let spanmail = document.getElementById("idmail");
-            let themail長度 = themail.length;
-            let flagac1 = false;
-
-            if (themail == "")
-                spanmail.innerHTML = "*請輸入";
-        }
-    </script>
-
-
-
-    <script>
-        function c檢查意見() {
-            let the意見物件 = document.getElementById("意見");
-            let the意見的值 = the意見物件.value;
-            let the意見 = document.getElementById("意見").value;
-            let span意見 = document.getElementById("idop");
-            let the意見長度 = the意見.length;
-            let flagac1 = false;
-
-            if (the意見 == "")
-                span意見.innerHTML = "*請輸入";
-        }
-    </script>
-
-
-    <hr>
-
-
-
-
-
-
-
-
-
-
 
     <!-- footer -->
     <div class="container-fluid footer">
@@ -245,7 +142,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    <script src="/navbar/navbar.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/check.js"></script>
     </div>
 
 </body>
