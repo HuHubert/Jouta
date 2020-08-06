@@ -13,6 +13,11 @@ body{
     background-color: white;
 
 }
+.imgslide{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
 .t2{
     margin:150px auto;
     padding: 50px 100px !important;
