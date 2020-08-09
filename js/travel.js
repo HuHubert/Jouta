@@ -27,8 +27,8 @@
         $("#row span").remove();
         $("#row div").append($(this).html());
         $("#row #temp").remove();
-        if ($(this).css('border-color') == 'rgb(250, 225, 7)') {    //第2n-1次點擊           
-            $(this).css('border-color', 'rgb(250, 225, 6)');
+        if ($(this).css('border-color') == 'rgb(250, 224, 178)') {    //第2n-1次點擊           
+            $(this).css('border-color', 'rgb(250, 224, 177)');
             $("#temp").remove();
             if ($(this).attr('id') == "07") {
                 $(this).append("<span id='temp'>遠－>近</span>");
@@ -44,7 +44,7 @@
             }
         }
         else {
-            $(this).css('border-color', 'rgb(250, 225, 7)');    //第2*n次點擊
+            $(this).css('border-color', 'rgb(250, 224, 178)');    //第2*n次點擊
             $("#temp").remove();
             if ($(this).attr('id') == "07") {
                 $(this).append("<span id='temp'>近－>遠</span>");
