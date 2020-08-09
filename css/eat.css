@@ -7,13 +7,13 @@ body{
 }
 
 .filter{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0, 0.3)), url("../images/eatbanner.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0,0,0, 0.05)), url("../images/eatbanner.jpg");
     background-attachment: local;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 300px;
-    box-shadow: 10px 10px 30px rgb(200, 200, 200);
+    box-shadow: 10px 10px 30px #fffbdf;
 }
 
 .top_form{
@@ -21,6 +21,10 @@ body{
     top: 50%;
     bottom: 50%;
     transform: translate(0%,250%);
+}
+
+.col input{
+    width:100%;
 }
 
 .form-control{
@@ -161,4 +165,11 @@ hr{
     top: 50%;
     bottom:50%;
     transform: translate(0%,30%);
+}
+
+.popularTitle{
+   margin-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: xx-large;
 }
