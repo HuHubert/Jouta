@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>個人頁面 | Jouta</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/profile.css">
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="/js/profile.js">
+    <link rel="stylesheet" href="css/profile2.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid topbanner">
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light" id="main">
             <a class="navbar-brand" href="main.html">
-                <img src="/images/joutalogo_black.png" alt="" width="100">
+                <img src="images/joutalogo_black.png" alt="" width="100">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,93 +48,113 @@
             </div>
         </nav>
     </div>
-
     <div class="container">
         <div class="profile-header">
             <div class="profile-img">
-                <img src="images/profile_avatar.jpg" alt="">
+                <img src="images/profile_avatar.jpg" alt="" class="">
             </div>
             <div class="profile-nav-info">
-                <h3 class="user-name">Ray Shih</h3>
+                <h3 class="user-name">Bright Code</h3>
                 <div class="address">
-                    <p class="county">綠島鄉</p>
-                    <span class="country">,台灣</span>
-                </div>                
+                    <p class="state">New York,</p>
+                    <span class="country">USA.</span>
+                </div>
+            </div>
+            <div class="profile-option">
+                <div class="notification">
+                    <i class="fas fa-bell"></i>
+                    <span class="alert-message"></span>
+                </div>
             </div>
         </div>
-    <div class="main-bd">
-        <div class="left-side">
-            <div class="profile-side">
-                <p class="mobile">
-                    <i class="fa fa-envelope">
-                    </i>ray848889@gmai.com
-                </p>
-                <div class="user-bio">
-                    <h3>Bio</h3>
-                    <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, adipisci perspiciatis in rerum repellendus assumenda magni accusantium repudiandae? Esse eveniet possimus recusandae pariatur sit neque iure a vero. Fuga, eligendi!
-                   </p>
-                </div>
-                <div class="user-rating">               
-                    <h3 class="rating">4.5</h3>
-                    <div class="star-and-reviews">
-                    <div class="stars">                 
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4"></div>
+            </div>
+        </div>
+        <div class="main-bd">
+            <div class="col-lg-3 left-side">
+                <div class="profile-side">
+                    <p class="mobile-no">
+                        <i class="fa fa-phone"></i>+23470xxxxx5464</p>
+                    <p class="user-mail"><i class="fa fa-envelope">
+                        </i>Brightisaac80@gmail.com
+                    </p>
+                    <div class="user-bio">
+                        <p class="bio">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi eum incidunt atque qui
+                            quasi, at reiciendis aspernatur sit vitae, ipsam commodi nam omnis recusandae laboriosam
+                            accusantium quidem amet dolorum perferendis!
+                        </p>
                     </div>
-                    <span class="no-user">
-                    <span>123</span>
-                    &nbsp;&nbsp;
-                    reviews</span>
+                    <div class="profile-btn">
+                        <button class="chatbtn">
+                            <i class="fa fa-comment"></i>
+                            </i>Chat
+                        </button>
+                        <button class="createbtn">
+                            <i class="fa fa-plus"></i>Create
+                        </button>
                     </div>
-                    
+                    <div class="user-rating">
+                        <h3 class="rating">4.5</h3>
+                        <div class="rate">
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <span class="no-user"><span>123</span>&nbsp;&nbsp;reviews</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
-        <div class="right-side">
-            <div class="nav">
-                <ul>
-                    <li onclick="tabs(0)" class="profile-detail">個人檔案</li>
-                    <li onclick="tabs(1)" class="history">歷史紀錄</li>
-                    <li onclick="tabs(2)" class="fav">我的發文</li>
-                </ul>
-            </div>
-            <div class="profile-body">
-                <div class="profile-posts tab">
-                    <h1>你的貼文</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo mollitia consequatur delectus ipsa aliquid provident possimus asperiores animi! Cum maiores placeat ex quibusdam voluptas perspiciatis suscipit quas ad repudiandae aliquid!</p>
+
+            <div class="col-lg-9 right-side ml-4">
+                <div class="tab_nav">
+                    <ul>
+                        <li class="user active" onclick="tabs(0)">post</li>
+                        <li class="user" onclick="tabs(1)">review</li>
+                        <li class="user" onclick="tabs(2)">setting</li>
+                    </ul>
                 </div>
-                <div class="history tab">
-                    <h1 class="history">歷史紀錄</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis omnis dolorem maiores accusantium doloribus tempore eum voluptates iure obcaecati illo, assumenda autem architecto, corrupti natus porro non provident aliquid facere.</p>
+                <div class="profile-body">
+                    <div class="profile-posts tab_info">
+                        <h1>Your Posts</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam animi alias doloribus,
+                            dolor
+                            necessitatibus reiciendis, magni molestias ut perferendis corrupti assumenda nobis,
+                            veritatis
+                            eos fugiat nisi quas rem repudiandae neque?</p>
+                    </div>
+                    <div class="profile-review tab_info">
+                        <h1>User Review</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam animi alias doloribus,
+                            dolor necessitatibus reiciendis, magni molestias ut perferendis corrupti assumenda
+                            nobis,
+                            veritatis eos fugiat nisi quas rem repudiandae neque?</p>
+                    </div>
+                    <div class="profile-setting tab_info">
+                        <h1>Account Setting</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatem explicabo
+                            voluptate, nisi deserunt magni? Laborum sapiente odit fugit sequi non, illum labore
+                            veniam minima eligendi iusto impedit officia voluptatum!</p>
+                    </div>
                 </div>
-                <div class="fav tab">
-                    <h1 class="fav">我的最愛</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus at harum neque ducimus nam nulla suscipit recusandae repellat nobis cupiditate. Tempora cupiditate ea assumenda! Deserunt quo natus minima eum mollitia.</p>
-                </div>
-            </div>
             </div>
         </div>
     </div>
+    <div class="container-fluid footer">
+        <p class="text-center mt-2 mb-2">Copyright © 2020 Jouta All rights reserved</p>
     </div>
-        <!-- footer -->
-        <div class="container-fluid footer">
-            <p class="text-center mt-2 mb-2">Copyright © 2020 Jouta All rights reserved</p>
-        </div>
 
-        <!-- script -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-            crossorigin="anonymous"></script>
-
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/profile.js"></script>
 </body>
 
 </html>
