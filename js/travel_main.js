@@ -1,7 +1,7 @@
-;(function(){
-    $(".hover").mouseleave(
-        function() {
-          $(this).removeClass("hover");
-        }
-      );
+; (function () {
+  $(".hover").mouseleave(
+    function () {
+      $(this).removeClass("hover");
+    }
+  );
 })();
