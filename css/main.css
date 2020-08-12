@@ -336,7 +336,7 @@ a.socials-item{
 
 a.socials-item:hover {
     box-shadow: 0 0px 20px rgba(20, 20, 20, 0.7);
-    background: linear-gradient(to right, 	#ffff93, 	#ffff37, #fffc35);
+    background: linear-gradient(to right,#ffff93,#fee567);
 }
 
 footer .widget ul {
@@ -354,7 +354,7 @@ footer .widget ul {
 }
 
 .posts li a:hover{
-    color: 	#FF8000;
+    color: 	#f5be2e;
     text-decoration: none;
     font-size: 1.2rem;
     transition-duration: 0.3s;
