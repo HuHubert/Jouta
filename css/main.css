@@ -1,9 +1,5 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 
-*{
-    /* border: 1px solid red; */
-}
-
 .topbanner{
     position: relative;
 }
@@ -11,10 +7,12 @@
 a{
     color: #fff;
 }
+
 a:hover{
     color: #fff;
     text-decoration: none;
 }
+
 .nav-main{
     background-color: #fee567;
     border-radius: 20px;
@@ -64,10 +62,23 @@ a:hover{
     box-shadow: 3px 3px 10px rgba(0,0,0,.5)!important;
 }
 
+.btnQuickmatch{
+    background-color: #fffc35;
+}
+
+.btnContent{
+    background-color: #f5be2e;
+}
+
+
+.btnQuickmatch a,.btnContent a{
+    color: rgb(20, 20, 20);
+}
+
 /* 主視覺影片 */
 .main {
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
     height: 600px;
     text-align: center;
 }
@@ -98,16 +109,15 @@ a:hover{
 
 .tabs label {
   	order: 1;
-	  display: block;
-	  padding: 1rem 2rem;
+	display: block;
+	padding: 1rem 2rem;
     margin-right: 0.2rem;
     margin-bottom: 0;
   	cursor: pointer;
     background: transparent;
     font-weight: bold;
-    /* transition: background ease 0.5s; */
     border-radius: 20px 20px 0 0;
-    transition-duration: .3s;
+    transition-duration: 0.3s;
     color: white;
 }
 
@@ -127,6 +137,8 @@ a:hover{
 
 .tabs input[type="radio"]:checked + label {
     background: aquamarine;
+    color: rgb(20, 20, 20);
+    transition-duration: 0.2s;
     border-radius: 20px 20px 0 0;
 }
 
@@ -261,7 +273,7 @@ footer p, footer,.posts li a {
 
 .footer-bottom {
     padding: 15px 0;
-    background-color: #fff4c1 !important;
+    background-color: #fffbdf !important;
     color: #000;
 }
 
@@ -288,7 +300,7 @@ a.socials-item {
     line-height: 16px;
     padding: 10px;
     border-radius: 50%;
-    background-color: 	#FFAF60;
+    background-color:#e8e8e8;
     box-shadow: 2px 2px 2px #000;
 }
 
@@ -320,9 +332,13 @@ a.socials-item {
 }
 
 
+a.socials-item{
+    transition-duration: 0.3s;
+}
+
 a.socials-item:hover {
-    box-shadow: 0 0px 20px rgba(84, 1, 74, 0.7);
-    background: linear-gradient(to right, 	#FFFF93, 	#FFFF37, #F9F900);
+    box-shadow: 0 0px 20px rgba(20, 20, 20, 0.7);
+    background: linear-gradient(to right,#ffff93,#fee567);
 }
 
 footer .widget ul {
@@ -335,10 +351,15 @@ footer .widget ul {
     padding-top: 6px;
 }
 
+.posts li a{
+    transition-duration: 0.3s;
+}
+
 .posts li a:hover{
-    color: 	#FF8000;
+    color: 	#f5be2e;
     text-decoration: none;
     font-size: 1.2rem;
+    transition-duration: 0.3s;
 }
 
 footer p {
