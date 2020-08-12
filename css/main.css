@@ -7,10 +7,12 @@
 a{
     color: #fff;
 }
+
 a:hover{
     color: #fff;
     text-decoration: none;
 }
+
 .nav-main{
     background-color: #fee567;
     border-radius: 20px;
