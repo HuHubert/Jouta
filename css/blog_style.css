@@ -67,7 +67,6 @@ body{
 
 .input-group {
     padding-top: 10px;
-    border-radius: 5%;
 }
 
 #post-content {
@@ -102,7 +101,7 @@ body{
 
 #titleContent {
     margin-right: 5px;
-    width: 40%;
+    width: 100%;
 }
 
 #btnPrev,#btnNext{
@@ -116,4 +115,8 @@ body{
 #btnPrev:hover,#btnNext:hover{
     background-color:#fee567;
     transition-duration: 0.15s;
+}
+
+.x img{
+    width: 100%;
 }
