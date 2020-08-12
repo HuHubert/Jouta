@@ -127,7 +127,8 @@
                 </div>
                 <div class="profile-body">
                     <div class="profile-detail tab_info">
-                        <h1>個人檔案</h1>
+                        <h1 id="title">個人檔案</h1>
+                        <form action="">
                         <button type="button" class="btn btn-warning">編輯資料</button>
                         <h6 class="profiletag">會員編號</h6>             
                        <input type="text" size="50" placeholder="4843168431" disabled>
@@ -135,7 +136,7 @@
                        <input type="text" size="50" placeholder="Mary123" disabled> 
                        <h6 class="profiletag">密碼</h6>             
                        <input type="text" size="50" placeholder="Maryyyyyy" disabled >
-                        <h6 class="profiletag">暱稱</h6>             
+                        <h6 class="profiletag" id="nickname">暱稱</h6>             
                        <input type="text" size="50" >
                        <h6 class="profiletag">年紀</h6>             
                        <input type="text" size="50">
@@ -147,6 +148,10 @@
                        <input type="text" size="50">
                        <h6 class="profiletag">工作</h6>             
                        <input type="text" size="50">
+                       <h6 class="profiletag">自我介紹</h6>
+                       <textarea id="intro" name="intro" rows="5" cols="50">哈囉!我叫...</textarea><br>
+                       <button type="button" class="btn btn-warning">繳交</button>
+                        </form>
                     </div>
                     <div class="profile-posts tab_info">
                         <h1>我的發文</h1>
