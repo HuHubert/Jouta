@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/profile.css">
     <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
 <body>
@@ -116,32 +117,73 @@
             <div class="col-lg-9 right-side ml-4">
                 <div class="tab_nav">
                     <ul>
-                        <li class="user active" onclick="tabs(0)">post</li>
-                        <li class="user" onclick="tabs(1)">review</li>
-                        <li class="user" onclick="tabs(2)">setting</li>
+                        <li class="user active" onclick="tabs(0)">個人檔案</li>
+                        <li class="user" onclick="tabs(1)">我的發文</li>
+                        <li class="user" onclick="tabs(2)">參加活動</li>
+                        <li class="user" onclick="tabs(3)">關注活動</li>
+                        <li class="user" onclick="tabs(4)">追蹤團主</li>
+                        <li class="user" onclick="tabs(5)">歷史紀錄</li>
                     </ul>
                 </div>
                 <div class="profile-body">
+                    <div class="profile-detail tab_info">
+                        <h1>個人檔案</h1>
+                        <button type="button" class="btn btn-warning">編輯資料</button>
+                        <h6 class="profiletag">會員編號</h6>             
+                       <input type="text" size="50" placeholder="4843168431" disabled>
+                       <h6 class="profiletag">帳號</h6>             
+                       <input type="text" size="50" placeholder="Mary123" disabled> 
+                       <h6 class="profiletag">密碼</h6>             
+                       <input type="text" size="50" placeholder="Maryyyyyy" disabled >
+                        <h6 class="profiletag">暱稱</h6>             
+                       <input type="text" size="50" >
+                       <h6 class="profiletag">年紀</h6>             
+                       <input type="text" size="50">
+                       <h6 class="profiletag">生日</h6>             
+                       <input type="text" size="50">
+                       <h6 class="profiletag">興趣</h6>             
+                       <input type="text" size="50">
+                       <h6 class="profiletag">所在地區</h6>             
+                       <input type="text" size="50">
+                       <h6 class="profiletag">工作</h6>             
+                       <input type="text" size="50">
+                    </div>
                     <div class="profile-posts tab_info">
-                        <h1>Your Posts</h1>
+                        <h1>我的發文</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam animi alias doloribus,
+                            dolor necessitatibus reiciendis, magni molestias ut perferendis corrupti assumenda
+                            nobis,
+                            veritatis eos fugiat nisi quas rem repudiandae neque?</p>
+                    </div>
+                    <div class="profile-event tab_info">
+                        <h1>參加活動</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatem explicabo
+                            voluptate, nisi deserunt magni? Laborum sapiente odit fugit sequi non, illum labore
+                            veniam minima eligendi iusto impedit officia voluptatum!</p>
+                    </div>
+                    <div class="profile-follow tab_info">
+                        <h1>關注活動</h1>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam animi alias doloribus,
                             dolor
                             necessitatibus reiciendis, magni molestias ut perferendis corrupti assumenda nobis,
                             veritatis
                             eos fugiat nisi quas rem repudiandae neque?</p>
                     </div>
-                    <div class="profile-review tab_info">
-                        <h1>User Review</h1>
+                    <div class="profile-follower tab_info">
+                        <h1>追蹤團主</h1>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam animi alias doloribus,
-                            dolor necessitatibus reiciendis, magni molestias ut perferendis corrupti assumenda
-                            nobis,
-                            veritatis eos fugiat nisi quas rem repudiandae neque?</p>
+                            dolor
+                            necessitatibus reiciendis, magni molestias ut perferendis corrupti assumenda nobis,
+                            veritatis
+                            eos fugiat nisi quas rem repudiandae neque?</p>
                     </div>
-                    <div class="profile-setting tab_info">
-                        <h1>Account Setting</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatem explicabo
-                            voluptate, nisi deserunt magni? Laborum sapiente odit fugit sequi non, illum labore
-                            veniam minima eligendi iusto impedit officia voluptatum!</p>
+                    <div class="profile-history tab_info">
+                        <h1>歷史紀錄</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam animi alias doloribus,
+                            dolor
+                            necessitatibus reiciendis, magni molestias ut perferendis corrupti assumenda nobis,
+                            veritatis
+                            eos fugiat nisi quas rem repudiandae neque?</p>
                     </div>
                 </div>
             </div>
@@ -155,6 +197,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/profile.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
 
 </html>
