@@ -28,7 +28,7 @@ html{
 /* banner */
 .navbar{
     z-index: 99;
-    background-color: rgba(232, 232, 232, 0.5);
+    background-color: #fffbdf;
 }
 
 a{
@@ -54,8 +54,6 @@ a{
     top: 0;
     left: 0;
     width: 100%;
-    background:rgba(255,251,223,1); 
-    transition-duration: 5s;
 }
 
 .footer{
