@@ -26,3 +26,7 @@
         bio.innerHTML = bio.oldText;
         bio.innerHTML += "&nbsp;" + '<span onclick="bioText()" id="see-less-bio">See More</span>';
     }
+    function nametitle(){
+        const nameElement = document.getElementById("nickname").value;
+        document.getElementById("label name").value = nameElement;
+    }

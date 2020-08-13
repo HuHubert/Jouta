@@ -201,14 +201,38 @@ button.createbtn i {
 .tab_nav .active,.tab_nav ul li:hover {
     box-shadow: 0px -3px 0px rgba(288,0,70,.9) inset;
 }
+.profile-body input{
+    border: none;
+    box-shadow:0 2px black;
+    background-color: blanchedalmond;
+    
+}
+.profile-body input:active,.profile-body input:focus{
+    box-shadow:0px 0px 2px yellowgreen;
+}
+
+.profiletag{
+    margin: 30px 0px 30px 0px;
+}
+#title{
+    text-align: center;
+}
 .profile-body{
     width: 100%;
     z-index: -1;
 }
+
+input[type="text"]:focus{
+    outline: none;
+}
+.profile-detail{
+    border: solid gainsboro;
+    z-index: 1;
+}
 .tab_info{
+    margin-bottom: 50px;
     padding: 20px;
     width: 100%;
-    text-align: center;
     display: none;
 }
 #see-more-bio,

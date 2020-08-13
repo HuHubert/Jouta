@@ -1,7 +1,6 @@
 body{
-    background-image: linear-gradient(to left,#f3e4c6,#e94c1d);
+    background-color: burlywood;
 }
-
 .register-left{
     text-align: center;
     color: #fff;
@@ -61,4 +60,12 @@ body{
 
 .register-right .btn-primary:hover{
     background: #ff5722;
+}
+input:focus {
+    outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+input[type="radio"]:focus {
+    outline: none !important;
+    box-shadow: none;
 }

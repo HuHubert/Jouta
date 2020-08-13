@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="favicon.ico" />
 </head>
 
-<body style="background-color: #FAFAFA;">
+<body>
     <div class="container-fluid ">
         <nav class="navbar navbar-expand-lg navbar-light header  " id="main">
             <a class="navbar-brand" href="main.html">
@@ -24,25 +24,25 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                 <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link nav-main" href="main.html">首頁 </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-eat" href="eat.html">找飯局</a>
+                    </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="main.html">首頁 </a>
+                        <a class="nav-link nav-travel" href="travel.html">找旅遊</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="eat.html">找飯局</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="travel.html">找旅遊<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog_main.html">找文章</a>
+                        <a class="nav-link nav-blog" href="blog_main.html">找文章</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">登入</a>
+                        <a class="nav-link nav-login" href="login.html">登入</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="register.html">註冊</a>
+                        <a class="nav-link nav-register" href="register.html">註冊</a>
                     </li>
                 </ul>
             </div>
@@ -60,22 +60,30 @@
                     <br>
                 </div>
                 <ul class="sort">
-                    <li class="m-2 mb-3 row justify-content-between" id="01"  style="list-style-type:none;cursor: pointer;"><span><img src="./images/01.png"
-                            alt="">熱門</span></li>
-                    <li class="m-2 mb-3 row justify-content-between" id="02" style="list-style-type:none;cursor: pointer;"><span><img src="./images/02.png"
-                            alt="">最新</span></li>
-                    <li class="m-2 mb-3 row justify-content-between" id="03" style="list-style-type:none;cursor: pointer;"><span><img src="./images/03.png"
-                            alt="">地區</span></li>
-                    <li class="m-2 mb-3 row justify-content-between" id="04" style="list-style-type:none;cursor: pointer;"><span><img src="./images/04.png"
-                            alt="">預算</span></li>
-                    <li class="m-2 mb-3 row justify-content-between" id="05" style="list-style-type:none;cursor: pointer;"><span><img src="./images/05.png"
-                            alt="">讚數</span></li>
-                    <li class="m-2 mb-3 row justify-content-between" id="06" style="list-style-type:none;cursor: pointer;"><span><img src="./images/06.png"
-                            alt="">瀏覽次數</span></li>
-                    <li class="m-2 mb-3 row justify-content-between" id="07" style="list-style-type:none;cursor: pointer;"><span><img src="./images/07.png"
-                            alt="">活動日期</span></li>
-                    <li class="m-2 mb-3 row justify-content-between" id="08" style="list-style-type:none;cursor: pointer;"><span><img src="./images/08.png"
-                            alt="">入團截止</span></li>
+                    <li class="m-2 mb-3 row justify-content-between" id="01"
+                        style="list-style-type:none;cursor: pointer;"><span><img src="./images/01.png" alt="">熱門</span>
+                    </li>
+                    <li class="m-2 mb-3 row justify-content-between" id="02"
+                        style="list-style-type:none;cursor: pointer;"><span><img src="./images/02.png" alt="">最新</span>
+                    </li>
+                    <li class="m-2 mb-3 row justify-content-between" id="03"
+                        style="list-style-type:none;cursor: pointer;"><span><img src="./images/03.png" alt="">地區</span>
+                    </li>
+                    <li class="m-2 mb-3 row justify-content-between" id="04"
+                        style="list-style-type:none;cursor: pointer;"><span><img src="./images/04.png" alt="">預算</span>
+                    </li>
+                    <li class="m-2 mb-3 row justify-content-between" id="05"
+                        style="list-style-type:none;cursor: pointer;"><span><img src="./images/05.png" alt="">讚數</span>
+                    </li>
+                    <li class="m-2 mb-3 row justify-content-between" id="06"
+                        style="list-style-type:none;cursor: pointer;"><span><img src="./images/06.png"
+                                alt="">瀏覽次數</span></li>
+                    <li class="m-2 mb-3 row justify-content-between" id="07"
+                        style="list-style-type:none;cursor: pointer;"><span><img src="./images/07.png"
+                                alt="">活動日期</span></li>
+                    <li class="m-2 mb-3 row justify-content-between" id="08"
+                        style="list-style-type:none;cursor: pointer;"><span><img src="./images/08.png"
+                                alt="">入團截止</span></li>
                 </ul>
                 <!-- 各項排序 -->
                 <br />
@@ -103,12 +111,12 @@
                 <div class="button row justify-content-between pt-1 pb-2 align-items-center">
                     <!-- 現在排序頭 -->
                     <div id="row">
-                        <div  style="list-style-type:none;cursor: pointer;"></div>
+                        <div style="list-style-type:none;cursor: pointer;"></div>
 
                     </div>
                     <!-- 現在排序尾 -->
                     <!-- 開團按鈕頭 -->
-                    <div id="new" class="row align-items-center pr-2  ">                  
+                    <div id="new" class="row align-items-center pr-2  ">
                         <form action="" style="font-size:smaller" class="mr-3">
                             <span>分類：</span>
                             <select name="" id="" style="border: none;">
@@ -120,7 +128,7 @@
                                 <option value="" selected>全部</option>
                             </select>
                         </form>
-                        <button class="btn btn-block mr-1   p-1" style="background-color:#FFE0B2 ;" type="submit" data-toggle="modal"
+                        <button class="btn btn-block btnContent mr-1 p-1" type="submit" data-toggle="modal"
                             data-target="#exampleModal"><img src="./images/10.png" class="mb-1" alt=""> Jou團去</button>
                     </div>
                     <!-- 開團按鈕尾 -->
@@ -130,8 +138,9 @@
                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog change-max-width-1400" role="document">
                         <div class="modal-content">
-                            <div class="modal-header border-main-color"  >
-                                <h5 class="modal-title" id="exampleModalLabel" ><span style="font-weight:bolder;"> 開團</span></h5>
+                            <div class="modal-header border-main-color">
+                                <h5 class="modal-title" id="exampleModalLabel"><span style="font-weight:bolder;">
+                                        開團</span></h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -139,20 +148,23 @@
                             <div class="modal-body">
                                 <!-- 揪團內容頭 -->
                                 <div class="container-fluid">
-                                    <span>標題：<input type="text" name="UserName" style="width:90%"></span> 
-                                    <div class="row m-0 mb-3 justify-content-around">                                 
+                                    <span>標題：<input type="text" name="UserName" style="width:90%"></span>
+                                    <div class="row m-0 mb-3 justify-content-around">
                                         <span>旅遊開始日期： <input type="date" name="UserName"></span>
                                         <span>旅遊結束日期： <input type="date" name="UserName"></span>
-                                        <span>入團截止： <input type="date" name="UserName"></span> 
+                                        <span>入團截止： <input type="date" name="UserName"></span>
                                         </span>
                                     </div>
-               
+
                                     <div class="row mb-4 mx-auto align-items-center justify-content-around">
-                                        <span><img src="./images/04.png" class="mb-1" alt="">預算：<input type="text" name="UserName"></span>
-                                        <span> <img src="./images/17.png" class="mb-1" alt="">分類：<input type="text" name="UserName"></span>
-                                        <span><img src="./images/13.png" class="mb-1" alt=""> 標籤：<input type="text" name="UserName"></span>
-                                            </div>
-                                        <div  class="row mb-4 mx-auto align-items-center justify-content-around">
+                                        <span><img src="./images/04.png" class="mb-1" alt="">預算：<input type="text"
+                                                name="UserName"></span>
+                                        <span> <img src="./images/17.png" class="mb-1" alt="">分類：<input type="text"
+                                                name="UserName"></span>
+                                        <span><img src="./images/13.png" class="mb-1" alt=""> 標籤：<input type="text"
+                                                name="UserName"></span>
+                                    </div>
+                                    <div class="row mb-4 mx-auto align-items-center justify-content-around">
                                         <span>團圖：<input Type="File" Name="YouFile"></span>
                                         <!-- <img src="./images/7.jpg" alt="" class="" style="width: 60%;width:60%;margin: auto;"> -->
                                         <span class=" "><img src="./images/03.png" class="mb-1" alt="">
@@ -166,18 +178,20 @@
                                         </span>
                                     </div>
 
-                                    
+
 
                                     <div class="row align-items-center">
-                                      <div class="mx-auto mb-3">
-                                        內容：<textarea name="Content" style="width:1000px;height:220px;vertical-align:top;"></textarea>
-                                      </div>
+                                        <div class="mx-auto mb-3">
+                                            內容：<textarea name="Content"
+                                                style="width:1000px;height:220px;vertical-align:top;"></textarea>
+                                        </div>
                                     </div>
 
                                 </div>
                                 <!-- 揪團內容尾 -->
                                 <div class="modal-footer  mt-2 border-main-color">
-                                    <button type="button" class="btn" style="background-color:#FFE0B2" data-dismiss="modal">送出</button>
+                                    <button type="button" class="btn" style="background-color:#FFE0B2"
+                                        data-dismiss="modal">送出</button>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
                                 </div>
                                 </form>
@@ -193,8 +207,9 @@
                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog change-max-width-1400" role="document">
                         <div class="modal-content">
-                            <div class="modal-header  border-main-color"  >
-                                <h5 class="modal-title" id="exampleModalLabel" ><span style="font-weight:bolder;"> 龜山步道。墾丁私房景點｜不到半小時即攻頂。全方位飽覽恆春山海景</span></h5>
+                            <div class="modal-header  border-main-color">
+                                <h5 class="modal-title" id="exampleModalLabel"><span style="font-weight:bolder;">
+                                        龜山步道。墾丁私房景點｜不到半小時即攻頂。全方位飽覽恆春山海景</span></h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -202,52 +217,58 @@
                             <div class="modal-body">
                                 <!-- 互動文章 -->
                                 <div class="container-fluid">
-                                    <div class="row m-0 mb-3 justify-content-around">    
-                                        <span>揪團日期： <span>2020/08/01</span></span>                                
+                                    <div class="row m-0 mb-3 justify-content-around">
+                                        <span>揪團日期： <span>2020/08/01</span></span>
                                         <span>活動日期： <span>2020/09/01</span></span>
-                                        <span>入團截止： <span>17:02:15</span></span> 
+                                        <span>入團截止： <span>17:02:15</span></span>
                                         <span><img src="./images/03.png" alt="">南部</span>
                                         <span><img src="./images/04.png" alt="">30000</span>
                                         <span><img src="./images/06.png" alt="">300</span>
                                         <span><img src="./images/05.png" alt="">50</span>
 
-                                        <span class="col-auto"><img  style="cursor: pointer;" src="./images/11.png" alt=""></span>
+                                        <span class="col-auto"><img style="cursor: pointer;" src="./images/11.png"
+                                                alt=""></span>
                                     </div>
                                     <div class="row mb-4">
-                                        <img src="./images/7.jpg" alt="" class="mx-auto" style="width: 60%;margin: auto;">
+                                        <img src="./images/7.jpg" alt="" class="mx-auto"
+                                            style="width: 60%;margin: auto;">
                                     </div>
 
                                     <div class="row align-items-center">
-                                      <div id="UserBlock">
-                                        <p><img src="./images/16.png" class="pb-1" alt=""> 失落的帝國</p>
-                                        <img src="images/eat_travel_avatar.png" alt="" class="col-auto" style="width: 300px;">
-                                        <p>團主名稱:怕豹</p>
-                                        <p>團主評分:5</p>
-                                      </div>
-                                      <div class="change-max-width-1000 ">
-                                        <p>由後灣發宅民宿主人發哥帶領走完龜山步道，
-                                            我下了一個註腳：這是C/P值很高的魯肉腳健行路線。路況平緩、沿途有路樹涼
-                                            亭遮蔭、不到半小時即可攻頂，來到山頂視野開闊，可眺望四重溪與保力溪出海
-                                            口，以及恆春山海景色，據說這裡的夕陽景色不遜於關山，逛完海生館再到這裡
-                                            賞落日，更是完美路線。除了山頂的開闊山海景，獨特的珊瑚礁岩地形、留存的
-                                            軍哨遺跡，以及不同角度的視野，讓這段輕鬆的健行，收穫良多。由後灣發宅民宿主人發哥帶領走完龜山步道，
-                                            我下了一個註腳：這是C/P值很高的魯肉腳健行路線。路況平緩、沿途有路樹涼
-                                            亭遮蔭、不到半小時即可攻頂，來到山頂視野開闊，可眺望四重溪與保力溪出海
-                                            口，以及恆春山海景色，據說這裡的夕陽景色不遜於關山，逛完海生館再到這裡
-                                            賞落日，更是完美路線。除了山頂的開闊山海景，獨特的珊瑚礁岩地形、留存的
-                                            軍哨遺跡，以及不同角度的視野，讓這段輕鬆的健行，收穫良多。</p>
-                                      </div>
+                                        <div id="UserBlock">
+                                            <p><img src="./images/16.png" class="pb-1" alt=""> 失落的帝國</p>
+                                            <img src="images/eat_travel_avatar.png" alt="" class="col-auto"
+                                                style="width: 300px;">
+                                            <p>團主名稱:怕豹</p>
+                                            <p>團主評分:5</p>
+                                        </div>
+                                        <div class="change-max-width-1000 ">
+                                            <p>由後灣發宅民宿主人發哥帶領走完龜山步道，
+                                                我下了一個註腳：這是C/P值很高的魯肉腳健行路線。路況平緩、沿途有路樹涼
+                                                亭遮蔭、不到半小時即可攻頂，來到山頂視野開闊，可眺望四重溪與保力溪出海
+                                                口，以及恆春山海景色，據說這裡的夕陽景色不遜於關山，逛完海生館再到這裡
+                                                賞落日，更是完美路線。除了山頂的開闊山海景，獨特的珊瑚礁岩地形、留存的
+                                                軍哨遺跡，以及不同角度的視野，讓這段輕鬆的健行，收穫良多。由後灣發宅民宿主人發哥帶領走完龜山步道，
+                                                我下了一個註腳：這是C/P值很高的魯肉腳健行路線。路況平緩、沿途有路樹涼
+                                                亭遮蔭、不到半小時即可攻頂，來到山頂視野開闊，可眺望四重溪與保力溪出海
+                                                口，以及恆春山海景色，據說這裡的夕陽景色不遜於關山，逛完海生館再到這裡
+                                                賞落日，更是完美路線。除了山頂的開闊山海景，獨特的珊瑚礁岩地形、留存的
+                                                軍哨遺跡，以及不同角度的視野，讓這段輕鬆的健行，收穫良多。</p>
+                                        </div>
                                     </div>
 
-                                        <div class="container">
-                                            <div class="row   justify-content-around">
-                                                <button class="btn btn-block mr-1  p-1" style="background-color:#FFE0B2 ;"  
-                                                 ><img src="./images/05.png" class="pb-1" alt="">覺得讚</button>
-                                                 <button class="btn btn-block mr-1  p-1" style="background-color:#FFE0B2 ;"  
-                                                 ><img src="./images/10.png" class="pb-1" alt="">想加入</button>
-                                            <div  style="cursor: pointer;">                       
-                                                <button class="btn btn-block mr-1  p-1" style="background-color:#FFE0B2 ;"  
-                                                ><img src="./images/12.png" alt="">留言區</button>
+                                    <div class="container">
+                                        <div class="row   justify-content-around">
+                                            <button class="btn btn-block mr-1  p-1"
+                                                style="background-color:#FFE0B2 ;"><img src="./images/05.png"
+                                                    class="pb-1" alt="">覺得讚</button>
+                                            <button class="btn btn-block mr-1  p-1"
+                                                style="background-color:#FFE0B2 ;"><img src="./images/10.png"
+                                                    class="pb-1" alt="">想加入</button>
+                                            <div style="cursor: pointer;">
+                                                <button class="btn btn-block mr-1  p-1"
+                                                    style="background-color:#FFE0B2 ;"><img src="./images/12.png"
+                                                        alt="">留言區</button>
                                             </div>
                                         </div>
                                     </div>
@@ -268,8 +289,9 @@
                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog change-max-width-1400" role="document">
                         <div class="modal-content">
-                            <div class="modal-header border-main-color"  >
-                                <h5 class="modal-title" id="exampleModalLabel" ><span style="font-weight:bolder;"> 龜山步道。墾丁私房景點｜不到半小時即攻頂。全方位飽覽恆春山海景</span></h5>
+                            <div class="modal-header border-main-color">
+                                <h5 class="modal-title" id="exampleModalLabel"><span style="font-weight:bolder;">
+                                        龜山步道。墾丁私房景點｜不到半小時即攻頂。全方位飽覽恆春山海景</span></h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -277,52 +299,58 @@
                             <div class="modal-body">
                                 <!-- 互動文章 -->
                                 <div class="container-fluid">
-                                    <div class="row m-0 mb-3 justify-content-around">    
-                                        <span>揪團日期： <span>2020/08/01</span></span>                                
+                                    <div class="row m-0 mb-3 justify-content-around">
+                                        <span>揪團日期： <span>2020/08/01</span></span>
                                         <span>活動日期： <span>2020/09/01</span></span>
-                                        <span>入團截止： <span>17:02:15</span></span> 
+                                        <span>入團截止： <span>17:02:15</span></span>
                                         <span><img src="./images/03.png" alt="">南部</span>
                                         <span><img src="./images/04.png" alt="">30000</span>
                                         <span><img src="./images/06.png" alt="">300</span>
                                         <span><img src="./images/05.png" alt="">50</span>
 
-                                        <span class="col-auto"><img  style="cursor: pointer;" src="./images/11.png" alt=""></span>
+                                        <span class="col-auto"><img style="cursor: pointer;" src="./images/11.png"
+                                                alt=""></span>
                                     </div>
                                     <div class="row mb-4">
-                                        <img src="./images/7.jpg" alt="" class="mx-auto" style="width:60% ;margin: auto;">
+                                        <img src="./images/7.jpg" alt="" class="mx-auto"
+                                            style="width:60% ;margin: auto;">
                                     </div>
 
                                     <div class="row align-items-center">
-                                      <div id="UserBlock">
-                                        <p><img src="./images/16.png" class="pb-1" alt=""> 失落的帝國</p>
-                                        <img src="images/eat_travel_avatar.png" alt="" class="col-auto" style="width: 300px;">
-                                        <p>團主名稱:怕豹</p>
-                                        <p>團主評分:5</p>
-                                      </div>
-                                      <div class="change-max-width-1000 ">
-                                        <p>由後灣發宅民宿主人發哥帶領走完龜山步道，
-                                            我下了一個註腳：這是C/P值很高的魯肉腳健行路線。路況平緩、沿途有路樹涼
-                                            亭遮蔭、不到半小時即可攻頂，來到山頂視野開闊，可眺望四重溪與保力溪出海
-                                            口，以及恆春山海景色，據說這裡的夕陽景色不遜於關山，逛完海生館再到這裡
-                                            賞落日，更是完美路線。除了山頂的開闊山海景，獨特的珊瑚礁岩地形、留存的
-                                            軍哨遺跡，以及不同角度的視野，讓這段輕鬆的健行，收穫良多。由後灣發宅民宿主人發哥帶領走完龜山步道，
-                                            我下了一個註腳：這是C/P值很高的魯肉腳健行路線。路況平緩、沿途有路樹涼
-                                            亭遮蔭、不到半小時即可攻頂，來到山頂視野開闊，可眺望四重溪與保力溪出海
-                                            口，以及恆春山海景色，據說這裡的夕陽景色不遜於關山，逛完海生館再到這裡
-                                            賞落日，更是完美路線。除了山頂的開闊山海景，獨特的珊瑚礁岩地形、留存的
-                                            軍哨遺跡，以及不同角度的視野，讓這段輕鬆的健行，收穫良多。</p>
-                                      </div>
+                                        <div id="UserBlock">
+                                            <p><img src="./images/16.png" class="pb-1" alt=""> 失落的帝國</p>
+                                            <img src="images/eat_travel_avatar.png" alt="" class="col-auto"
+                                                style="width: 300px;">
+                                            <p>團主名稱:怕豹</p>
+                                            <p>團主評分:5</p>
+                                        </div>
+                                        <div class="change-max-width-1000 ">
+                                            <p>由後灣發宅民宿主人發哥帶領走完龜山步道，
+                                                我下了一個註腳：這是C/P值很高的魯肉腳健行路線。路況平緩、沿途有路樹涼
+                                                亭遮蔭、不到半小時即可攻頂，來到山頂視野開闊，可眺望四重溪與保力溪出海
+                                                口，以及恆春山海景色，據說這裡的夕陽景色不遜於關山，逛完海生館再到這裡
+                                                賞落日，更是完美路線。除了山頂的開闊山海景，獨特的珊瑚礁岩地形、留存的
+                                                軍哨遺跡，以及不同角度的視野，讓這段輕鬆的健行，收穫良多。由後灣發宅民宿主人發哥帶領走完龜山步道，
+                                                我下了一個註腳：這是C/P值很高的魯肉腳健行路線。路況平緩、沿途有路樹涼
+                                                亭遮蔭、不到半小時即可攻頂，來到山頂視野開闊，可眺望四重溪與保力溪出海
+                                                口，以及恆春山海景色，據說這裡的夕陽景色不遜於關山，逛完海生館再到這裡
+                                                賞落日，更是完美路線。除了山頂的開闊山海景，獨特的珊瑚礁岩地形、留存的
+                                                軍哨遺跡，以及不同角度的視野，讓這段輕鬆的健行，收穫良多。</p>
+                                        </div>
                                     </div>
 
-                                        <div class="container">
-                                            <div class="row   justify-content-around">
-                                                <button class="btn btn-block mr-1  p-1" style="background-color:#FFE0B2 ;"  
-                                                 ><img src="./images/05.png" class="pb-1" alt="">覺得讚</button>
-                                                 <button class="btn btn-block mr-1  p-1" style="background-color:#FFE0B2 ;"  
-                                                 ><img src="./images/10.png" class="pb-1" alt="">想加入</button>
-                                            <div  style="cursor: pointer;">                       
-                                                <button class="btn btn-block mr-1  p-1" style="background-color:#FFE0B2 ;"  
-                                                ><img src="./images/12.png" alt="">留言區</button>
+                                    <div class="container">
+                                        <div class="row   justify-content-around">
+                                            <button class="btn btn-block mr-1  p-1"
+                                                style="background-color:#FFE0B2 ;"><img src="./images/05.png"
+                                                    class="pb-1" alt="">覺得讚</button>
+                                            <button class="btn btn-block mr-1  p-1"
+                                                style="background-color:#FFE0B2 ;"><img src="./images/10.png"
+                                                    class="pb-1" alt="">想加入</button>
+                                            <div style="cursor: pointer;">
+                                                <button class="btn btn-block mr-1  p-1"
+                                                    style="background-color:#FFE0B2 ;"><img src="./images/12.png"
+                                                        alt="">留言區</button>
                                             </div>
                                         </div>
                                     </div>
@@ -343,8 +371,9 @@
                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog change-max-width-1400" role="document">
                         <div class="modal-content">
-                            <div class="modal-header border-main-color"  >
-                                <h5 class="modal-title" id="exampleModalLabel" ><span style="font-weight:bolder;"> 龜山步道。墾丁私房景點｜不到半小時即攻頂。全方位飽覽恆春山海景</span></h5>
+                            <div class="modal-header border-main-color">
+                                <h5 class="modal-title" id="exampleModalLabel"><span style="font-weight:bolder;">
+                                        龜山步道。墾丁私房景點｜不到半小時即攻頂。全方位飽覽恆春山海景</span></h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -352,52 +381,58 @@
                             <div class="modal-body">
                                 <!-- 互動文章 -->
                                 <div class="container-fluid">
-                                    <div class="row m-0 mb-3 justify-content-around">    
-                                        <span>揪團日期： <span>2020/08/01</span></span>                                
+                                    <div class="row m-0 mb-3 justify-content-around">
+                                        <span>揪團日期： <span>2020/08/01</span></span>
                                         <span>活動日期： <span>2020/09/01</span></span>
-                                        <span>入團截止： <span>17:02:15</span></span> 
+                                        <span>入團截止： <span>17:02:15</span></span>
                                         <span><img src="./images/03.png" alt="">南部</span>
                                         <span><img src="./images/04.png" alt="">30000</span>
                                         <span><img src="./images/06.png" alt="">300</span>
                                         <span><img src="./images/05.png" alt="">50</span>
 
-                                        <span class="col-auto"><img  style="cursor: pointer;" src="./images/11.png" alt=""></span>
+                                        <span class="col-auto"><img style="cursor: pointer;" src="./images/11.png"
+                                                alt=""></span>
                                     </div>
                                     <div class="row mb-4">
-                                        <img src="./images/7.jpg" alt="" class="mx-auto" style="width:60%;margin: auto;">
+                                        <img src="./images/7.jpg" alt="" class="mx-auto"
+                                            style="width:60%;margin: auto;">
                                     </div>
 
                                     <div class="row align-items-center">
-                                      <div id="UserBlock">
-                                        <p><img src="./images/16.png" class="pb-1" alt=""> 失落的帝國</p>
-                                        <img src="images/eat_travel_avatar.png" alt="" class="col-auto" style="width: 300px;">
-                                        <p>團主名稱:怕豹</p>
-                                        <p>團主評分:5</p>
-                                      </div>
-                                      <div class="change-max-width-1000 ">
-                                        <p>由後灣發宅民宿主人發哥帶領走完龜山步道，
-                                            我下了一個註腳：這是C/P值很高的魯肉腳健行路線。路況平緩、沿途有路樹涼
-                                            亭遮蔭、不到半小時即可攻頂，來到山頂視野開闊，可眺望四重溪與保力溪出海
-                                            口，以及恆春山海景色，據說這裡的夕陽景色不遜於關山，逛完海生館再到這裡
-                                            賞落日，更是完美路線。除了山頂的開闊山海景，獨特的珊瑚礁岩地形、留存的
-                                            軍哨遺跡，以及不同角度的視野，讓這段輕鬆的健行，收穫良多。由後灣發宅民宿主人發哥帶領走完龜山步道，
-                                            我下了一個註腳：這是C/P值很高的魯肉腳健行路線。路況平緩、沿途有路樹涼
-                                            亭遮蔭、不到半小時即可攻頂，來到山頂視野開闊，可眺望四重溪與保力溪出海
-                                            口，以及恆春山海景色，據說這裡的夕陽景色不遜於關山，逛完海生館再到這裡
-                                            賞落日，更是完美路線。除了山頂的開闊山海景，獨特的珊瑚礁岩地形、留存的
-                                            軍哨遺跡，以及不同角度的視野，讓這段輕鬆的健行，收穫良多。</p>
-                                      </div>
+                                        <div id="UserBlock">
+                                            <p><img src="./images/16.png" class="pb-1" alt=""> 失落的帝國</p>
+                                            <img src="images/eat_travel_avatar.png" alt="" class="col-auto"
+                                                style="width: 300px;">
+                                            <p>團主名稱:怕豹</p>
+                                            <p>團主評分:5</p>
+                                        </div>
+                                        <div class="change-max-width-1000 ">
+                                            <p>由後灣發宅民宿主人發哥帶領走完龜山步道，
+                                                我下了一個註腳：這是C/P值很高的魯肉腳健行路線。路況平緩、沿途有路樹涼
+                                                亭遮蔭、不到半小時即可攻頂，來到山頂視野開闊，可眺望四重溪與保力溪出海
+                                                口，以及恆春山海景色，據說這裡的夕陽景色不遜於關山，逛完海生館再到這裡
+                                                賞落日，更是完美路線。除了山頂的開闊山海景，獨特的珊瑚礁岩地形、留存的
+                                                軍哨遺跡，以及不同角度的視野，讓這段輕鬆的健行，收穫良多。由後灣發宅民宿主人發哥帶領走完龜山步道，
+                                                我下了一個註腳：這是C/P值很高的魯肉腳健行路線。路況平緩、沿途有路樹涼
+                                                亭遮蔭、不到半小時即可攻頂，來到山頂視野開闊，可眺望四重溪與保力溪出海
+                                                口，以及恆春山海景色，據說這裡的夕陽景色不遜於關山，逛完海生館再到這裡
+                                                賞落日，更是完美路線。除了山頂的開闊山海景，獨特的珊瑚礁岩地形、留存的
+                                                軍哨遺跡，以及不同角度的視野，讓這段輕鬆的健行，收穫良多。</p>
+                                        </div>
                                     </div>
 
-                                        <div class="container">
-                                            <div class="row   justify-content-around">
-                                                <button class="btn btn-block mr-1  p-1" style="background-color:#FFE0B2 ;"  
-                                                 ><img src="./images/05.png" class="pb-1" alt="">覺得讚</button>
-                                                 <button class="btn btn-block mr-1  p-1" style="background-color:#FFE0B2 ;"  
-                                                 ><img src="./images/10.png" class="pb-1" alt="">想加入</button>
-                                            <div  style="cursor: pointer;">                       
-                                                <button class="btn btn-block mr-1  p-1" style="background-color:#FFE0B2 ;"  
-                                                ><img src="./images/12.png" alt="">留言區</button>
+                                    <div class="container">
+                                        <div class="row   justify-content-around">
+                                            <button class="btn btn-block mr-1  p-1"
+                                                style="background-color:#FFE0B2 ;"><img src="./images/05.png"
+                                                    class="pb-1" alt="">覺得讚</button>
+                                            <button class="btn btn-block mr-1  p-1"
+                                                style="background-color:#FFE0B2 ;"><img src="./images/10.png"
+                                                    class="pb-1" alt="">想加入</button>
+                                            <div style="cursor: pointer;">
+                                                <button class="btn btn-block mr-1  p-1"
+                                                    style="background-color:#FFE0B2 ;"><img src="./images/12.png"
+                                                        alt="">留言區</button>
                                             </div>
                                         </div>
                                     </div>
@@ -421,23 +456,24 @@
                     <!-- -------------文章區頭-------------- -->
                     <div class="row Travel_border align-items-center p-3">
                         <div class="container-fluid">
-                        <div class="row m-0 mb-3   justify-content-between" style="font-size: 16px;">
-                            <div class="pl-1">
-                            <span style="cursor: pointer;"><img   src="./images/09.png" alt="">Jackson</span>
-                            <span>&nbsp; &nbsp;</span>
-                            <span>揪團日期： <span>2020/08/01</span></span>
-                            <span>&nbsp; &nbsp;</span>
-                            <span>活動日期： <span>2020/09/01</span></span>
-                            <span>&nbsp; &nbsp;</span>
-                            <span>入團截止： <span>17:02:15</span></span>
-                            </div>
-                            <div class="p-0  ">
-                            <img  style="cursor: pointer;" src="./images/14.png" alt="">
+                            <div class="row m-0 mb-3   justify-content-between" style="font-size: 16px;">
+                                <div class="pl-1">
+                                    <span style="cursor: pointer;"><img src="./images/09.png" alt="">Jackson</span>
+                                    <span>&nbsp; &nbsp;</span>
+                                    <span>揪團日期： <span>2020/08/01</span></span>
+                                    <span>&nbsp; &nbsp;</span>
+                                    <span>活動日期： <span>2020/09/01</span></span>
+                                    <span>&nbsp; &nbsp;</span>
+                                    <span>入團截止： <span>17:02:15</span></span>
+                                </div>
+                                <div class="p-0  ">
+                                    <img style="cursor: pointer;" src="./images/14.png" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
                         <div class="row pl-3">
-                            <div  class="content mb-3" style="cursor: pointer;width:70%;height: 150px;" data-toggle="modal" data-target="#exampleModal1">
+                            <div class="content mb-3" style="cursor: pointer;width:70%;height: 150px;"
+                                data-toggle="modal" data-target="#exampleModal1">
                                 <span style="font-weight:bolder;"> 龜山步道。墾丁私房景點｜不到半小時即攻頂。全方位飽覽恆春山海景</span>
                                 <br>
                                 <span style="font-size: 13px;">由後灣發宅民宿主人發哥帶領走完龜山步道，
@@ -448,42 +484,43 @@
                                     軍哨遺跡，以及不同角度的視野，讓這段輕鬆的健行，收穫良多。</span>
 
                             </div>
-                            <img src="images/7.jpg"  alt=""   class="col-auto" style="width: 30%;height: 150px;">
+                            <img src="images/7.jpg" alt="" class="col-auto" style="width: 30%;height: 150px;">
                         </div>
                         <div class="container">
-                    <div class="row   justify-content-between">
-                        <div> 
-                            <img src="./images/03.png" alt="">南部
-                            <img src="./images/04.png" alt="">30000
-                            <img src="./images/06.png" alt="">300
-                            <img src="./images/05.png" alt="">50
+                            <div class="row   justify-content-between">
+                                <div>
+                                    <img src="./images/03.png" alt="">南部
+                                    <img src="./images/04.png" alt="">30000
+                                    <img src="./images/06.png" alt="">300
+                                    <img src="./images/05.png" alt="">50
+                                </div>
+                                <div style="cursor: pointer;">
+                                    <img src="./images/12.png" alt="">留言
+                                </div>
+                            </div>
                         </div>
-                    <div  style="cursor: pointer;">                       
-                        <img src="./images/12.png" alt="">留言
                     </div>
-                    </div>
-                </div>
-                </div>
                     <!-- -------------文章分割線1-------------- -->
                     <div class="row  Travel_border align-items-center p-3">
                         <div class="container-fluid">
-                        <div class="row m-0 mb-3   justify-content-between" style="font-size: 16px;">
-                            <div class="pl-1">
-                            <span style="cursor: pointer;"><img   src="./images/09.png" alt="">Jackson</span>
-                            <span>&nbsp; &nbsp;</span>
-                            <span>揪團日期： <span>2020/08/01</span></span>
-                            <span>&nbsp; &nbsp;</span>
-                            <span>活動日期： <span>2020/09/01</span></span>
-                            <span>&nbsp; &nbsp;</span>
-                            <span>入團截止： <span>17:02:15</span></span>
-                            </div>
-                            <div class="p-0  ">
-                            <img  style="cursor: pointer;" src="./images/11.png" alt="">
+                            <div class="row m-0 mb-3   justify-content-between" style="font-size: 16px;">
+                                <div class="pl-1">
+                                    <span style="cursor: pointer;"><img src="./images/09.png" alt="">Jackson</span>
+                                    <span>&nbsp; &nbsp;</span>
+                                    <span>揪團日期： <span>2020/08/01</span></span>
+                                    <span>&nbsp; &nbsp;</span>
+                                    <span>活動日期： <span>2020/09/01</span></span>
+                                    <span>&nbsp; &nbsp;</span>
+                                    <span>入團截止： <span>17:02:15</span></span>
+                                </div>
+                                <div class="p-0  ">
+                                    <img style="cursor: pointer;" src="./images/11.png" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
                         <div class="row pl-3">
-                            <div  class="content mb-3" style="cursor: pointer;width:70%;height: 150px;" data-toggle="modal" data-target="#exampleModal2">
+                            <div class="content mb-3" style="cursor: pointer;width:70%;height: 150px;"
+                                data-toggle="modal" data-target="#exampleModal2">
                                 <span style="font-weight:bolder;"> 龜山步道。墾丁私房景點｜不到半小時即攻頂。全方位飽覽恆春山海景</span>
                                 <br>
                                 <span style="font-size: 13px;">由後灣發宅民宿主人發哥帶領走完龜山步道，
@@ -494,42 +531,43 @@
                                     軍哨遺跡，以及不同角度的視野，讓這段輕鬆的健行，收穫良多。</span>
 
                             </div>
-                            <img src="images/7.jpg"  alt=""   class="col-auto" style="width: 30%;height: 150px;">
+                            <img src="images/7.jpg" alt="" class="col-auto" style="width: 30%;height: 150px;">
                         </div>
                         <div class="container">
-                    <div class="row   justify-content-between">
-                        <div> 
-                            <img src="./images/03.png" alt="">南部
-                            <img src="./images/04.png" alt="">30000
-                            <img src="./images/06.png" alt="">300
-                            <img src="./images/05.png" alt="">50
+                            <div class="row   justify-content-between">
+                                <div>
+                                    <img src="./images/03.png" alt="">南部
+                                    <img src="./images/04.png" alt="">30000
+                                    <img src="./images/06.png" alt="">300
+                                    <img src="./images/05.png" alt="">50
+                                </div>
+                                <div style="cursor: pointer;">
+                                    <img src="./images/12.png" alt="">留言
+                                </div>
+                            </div>
                         </div>
-                    <div  style="cursor: pointer;">                       
-                        <img src="./images/12.png" alt="">留言
                     </div>
-                    </div>
-                </div>
-                </div>
                     <!-- -------------文章分割線2-------------- -->
                     <div class="row Travel_border align-items-center p-3">
                         <div class="container-fluid">
-                        <div class="row m-0 mb-3   justify-content-between" style="font-size: 16px;">
-                            <div class="pl-1">
-                            <span style="cursor: pointer;"><img   src="./images/09.png" alt="">Jackson</span>
-                            <span>&nbsp; &nbsp;</span>
-                            <span>揪團日期： <span>2020/08/01</span></span>
-                            <span>&nbsp; &nbsp;</span>
-                            <span>活動日期： <span>2020/09/01</span></span>
-                            <span>&nbsp; &nbsp;</span>
-                            <span>入團截止： <span>17:02:15</span></span>
-                            </div>
-                            <div class="p-0  ">
-                            <img  style="cursor: pointer;" src="./images/14.png" alt="">
+                            <div class="row m-0 mb-3   justify-content-between" style="font-size: 16px;">
+                                <div class="pl-1">
+                                    <span style="cursor: pointer;"><img src="./images/09.png" alt="">Jackson</span>
+                                    <span>&nbsp; &nbsp;</span>
+                                    <span>揪團日期： <span>2020/08/01</span></span>
+                                    <span>&nbsp; &nbsp;</span>
+                                    <span>活動日期： <span>2020/09/01</span></span>
+                                    <span>&nbsp; &nbsp;</span>
+                                    <span>入團截止： <span>17:02:15</span></span>
+                                </div>
+                                <div class="p-0  ">
+                                    <img style="cursor: pointer;" src="./images/14.png" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
                         <div class="row pl-3">
-                            <div  class="content mb-3" style="cursor: pointer;width:70%;height: 150px;" data-toggle="modal" data-target="#exampleModal3">
+                            <div class="content mb-3" style="cursor: pointer;width:70%;height: 150px;"
+                                data-toggle="modal" data-target="#exampleModal3">
                                 <span style="font-weight:bolder;"> 龜山步道。墾丁私房景點｜不到半小時即攻頂。全方位飽覽恆春山海景</span>
                                 <br>
                                 <span style="font-size: 13px;">由後灣發宅民宿主人發哥帶領走完龜山步道，
@@ -540,30 +578,31 @@
                                     軍哨遺跡，以及不同角度的視野，讓這段輕鬆的健行，收穫良多。</span>
 
                             </div>
-                            <img src="images/7.jpg"  alt=""   class="col-auto" style="width: 30%;height: 150px;">
+                            <img src="images/7.jpg" alt="" class="col-auto" style="width: 30%;height: 150px;">
                         </div>
                         <div class="container">
-                    <div class="row   justify-content-between">
-                        <div> 
-                            <img src="./images/03.png" alt="">南部
-                            <img src="./images/04.png" alt="">30000
-                            <img src="./images/06.png" alt="">300
-                            <img src="./images/05.png" alt="">50
+                            <div class="row   justify-content-between">
+                                <div>
+                                    <img src="./images/03.png" alt="">南部
+                                    <img src="./images/04.png" alt="">30000
+                                    <img src="./images/06.png" alt="">300
+                                    <img src="./images/05.png" alt="">50
+                                </div>
+                                <div style="cursor: pointer;">
+                                    <img src="./images/12.png" alt="">留言
+                                </div>
+                            </div>
                         </div>
-                    <div  style="cursor: pointer;">                       
-                        <img src="./images/12.png" alt="">留言
                     </div>
-                    </div>
-                </div>
-                </div>
                     <!-- -------------文章分割線3-------------- -->
-                 <div class="mt-3">
-                    <button class="btn btn-block mr-1  p-1 row mx-auto" style="background-color:#FFE0B2 ;"  
-                    ><img src="./images/10.png" alt="" class="pb-1">讀取更多</button>
-                </div>
-                <div class="mb-5"></div> <!--底部墊高-->                 
+                    <div class="mt-3">
+                        <button class="btn btn-block btnContent mr-1 p-1 row mx-auto"><img src="./images/10.png" alt=""
+                                class="pb-1">讀取更多</button>
+                    </div>
+                    <div class="mb-5"></div>
+                    <!--底部墊高-->
 
-                    
+
                 </div>
             </div>
             <!-- 文章內容區結束 -->
