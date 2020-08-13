@@ -16,7 +16,7 @@
 <body>
     <div class="container-fluid">
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light" id="main">
+        <nav class="navbar navbar-expand-lg navbar-light header" id="main">
             <a class="navbar-brand" href="main.html">
                 <img src="images/joutalogo_black.png" alt="" width="100">
             </a>
@@ -90,7 +90,8 @@
             <div class="d-flex">
                 <!-- 篩選器 -->
                 <div class="sortby">
-                    <button type="button" class="btn btnContent btn-lg btn-block mb-5" id="sortbyitems">Jou團去!</button>
+                    <button type="button" class="btn btnContent btn-lg btn-block mb-5" id="sortbyitems"
+                        data-toggle="modal" data-target="#JouModal">Jou團去!</button>
                     <p class="mb-3" id="sortbyitems">搜尋結果排序根據</p>
                     <button type="button" class="btn btn-outline-info btn-lg btn-block mb-3"
                         id="sortbyitems">時間</button>
@@ -101,6 +102,75 @@
                     <button type="button" class="btn btn-outline-info btn-lg btn-block mb-3"
                         id="sortbyitems">瀏覽次數</button>
                 </div>
+
+                <!-- jou modal head -->
+                <div class="modal fade" id="JouModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog change-max-width-1400" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header border-main-color">
+                                <h5 class="modal-title" id="exampleModalLabel"><span style="font-weight:bolder;">
+                                        開團</span></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- jou modal content -->
+                                <div class="container">
+                                    <p><img src="./images/19.png" class="mb-1" alt="">標題：<input type="text"
+                                            name="UserName" style="width:90%"></p>
+                                    <div class="m-0 mb-3 modalContent d-flex justify-content-around">
+                                        <div class="modalContentLeft">
+                                            <p><img src="./images/08.png" class="mb-1" alt="">旅遊開始日期： <input type="date"
+                                                    name="UserName"></p>
+                                            <p><img src="./images/08.png" class="mb-1" alt="">旅遊結束日期： <input type="date"
+                                                    name="UserName"></p>
+                                            <p><img src="./images/08.png" class="mb-1" alt="">入團截止日期： <input type="date"
+                                                    name="UserName"></p>
+                                            <p><img src="./images/20.png" class="mb-1" alt="">團圖：<input Type="File"
+                                                    Name="YouFile"></p>
+                                        </div>
+                                        <div class="modalContentRight">
+                                            <p><img src="./images/04.png" class="mb-1" alt="">預算：<input type="text"
+                                                    name="UserName"></p>
+                                            <p><img src="./images/17.png" class="mb-1" alt="">分類：<input type="text"
+                                                    name="UserName"></p>
+                                            <p><img src="./images/13.png" class="mb-1" alt="">標籤：<input type="text"
+                                                    name="UserName"></p>
+                                            <p class="pt-2"><img src="./images/03.png" class="mb-1" alt="">
+                                                地區：
+                                                <select name="" id="">
+                                                    <option value="">北部</option>
+                                                    <option value="">中部</option>
+                                                    <option value="">南部</option>
+                                                    <option value="">東部</option>
+                                                </select>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center">
+                                    <div class="mx-auto mb-3">
+                                        內容：<textarea name="Content"
+                                            style="width:1000px;height:220px;vertical-align:top;"></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- 揪團內容尾 -->
+                            <div class="modal-footer  mt-2 border-main-color">
+                                <button type="submit" class="btn" style="background-color:#fee567"
+                                    data-dismiss="modal">送出</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
                 <!-- 活動清單 -->
                 <div class="questbox">
                     <!-- 活動格 -->

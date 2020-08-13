@@ -178,3 +178,19 @@ hr{
     text-align: center;
     font-size: xx-large;
 }
+
+.modal{
+    padding-right: 0px!important;
+}
+
+.modal-body input{
+    margin: 10px !important;
+}
+
+.change-max-width-1400 {
+    max-width: 1400px;
+}
+
+.modalContentLeft p,.modalContentRight p{
+    height: 60px;
+}
