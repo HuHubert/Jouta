@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 
+body{
+    background-color: #fffef4;
+}
+
 .topbanner{
     position: relative;
 }
