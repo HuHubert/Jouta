@@ -1,5 +1,7 @@
 body{
     background-color: burlywood;
+<<<<<<< HEAD
+=======
 }
 
 .navbar{
@@ -9,8 +11,8 @@ body{
 .nav-register{
     background-color: #fee567;
     border-radius: 20px;
+>>>>>>> 3a8127cf7ade34e4dfb2fdff269c8778c0f82d65
 }
-
 .register-left{
     text-align: center;
     color: #fff;
@@ -69,7 +71,11 @@ body{
 }
 
 .register-right .btn-primary:hover{
+<<<<<<< HEAD
+    background: #ff5722;
+=======
     background: #fee567;
+>>>>>>> 3a8127cf7ade34e4dfb2fdff269c8778c0f82d65
 }
 
 input:focus {
