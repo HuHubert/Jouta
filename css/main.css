@@ -63,7 +63,14 @@ a:hover{
 }
 
 .btn{
-    box-shadow: 3px 3px 10px rgba(0,0,0,.5)!important;
+    box-shadow: 1px 1px 3px rgba(20,20,20,0.5);
+    transition-duration: .5s;
+}
+
+.btn:hover{
+    box-shadow: 1px 1px 9px rgba(80,80,80,0.5);
+    transition-duration: .5s;
+    background-color: #fee567;
 }
 
 .btnQuickmatch{
@@ -226,8 +233,8 @@ a:hover{
     position: relative;
 }
 
-.block{
-    padding: 15px;;
+.block,.snip1518{
+    padding: 15px;
 }
 
 .person{
@@ -236,6 +243,17 @@ a:hover{
     flex-wrap: wrap;
     align-content: flex-start;
 }
+
+.card,figure.snip1518{
+    box-shadow: 3px 3px 10px #e8e8e8;
+    transition-duration: .5s;
+}
+
+.card:hover,figure.snip1518:hover{
+    box-shadow: 2px 2px 5px #aaaaaa;
+    transition-duration: .5s;
+}
+
 
 /* 跟我趴趴走 */
 .gowhere{
