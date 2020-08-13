@@ -71,6 +71,7 @@ body{
 .register-right .btn-primary:hover{
     background: #fee567;
 }
+
 input:focus {
     outline: -webkit-focus-ring-color auto 5px !important;
 }
