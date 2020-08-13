@@ -71,10 +71,14 @@ body{
 
 #post-content {
 <<<<<<< HEAD
+<<<<<<< HEAD
   height: 500px;
 =======
     height: 800px;
 >>>>>>> 966599806863a5ab747fc56de769cea74e6069d6
+=======
+    height: 800px;
+>>>>>>> 3a8127cf7ade34e4dfb2fdff269c8778c0f82d65
 }
 
 #post-image {
@@ -100,7 +104,11 @@ body{
 
 #pTitle {
     font-size: 25px;
+<<<<<<< HEAD
     margin-right: 10px;
+=======
+    margin-right:10px;
+>>>>>>> 3a8127cf7ade34e4dfb2fdff269c8778c0f82d65
 }
 
 #titleContent {
