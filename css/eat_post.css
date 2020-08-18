@@ -1,0 +1,66 @@
+/* *{
+    border: 1px solid red;
+} */
+
+body{
+    background-color: #fffef4;
+}
+
+hr{
+    background-color: #f5be2e;
+}
+
+.eventPic{
+    background-image: url(../images/foods.jpg);
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+.mainBlock{
+    margin-bottom: 70px;
+}
+
+.col-3,.col-4,.col-5,.col-9{
+    padding: 0;
+}
+
+.memberInfo,.eatTitle{
+    margin: 20px 0;
+}
+
+.memberAvatar img{
+    width: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: fixed;
+    border: 5px double #ff5b45;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.title_name,.memberRating{
+    margin: 20px 0;
+}
+
+.memberName{
+    font-size: 60px ;
+}
+
+.memberRating span{
+    float: right;
+}
+
+.eatTitle{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.cParagraph{
+    
+}
+
+.cInfo{
+}
