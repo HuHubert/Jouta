@@ -81,7 +81,7 @@ body{
     background: -o-linear-gradient(10deg,  #cedce7 0%,#f3e4c6 100%);
     background: linear-gradient(50deg,  #cedce7 0%,#f3e4c6 100%);
     color:#444;
-  }
+}
   
 .front:after{
     position: absolute;
@@ -180,13 +180,12 @@ body{
   
 .front .inner span{
     color: rgba(255,255,255,0.7);
-    font-family: 'Montserrat';
+    font-family: '微軟正黑體';
     font-weight: 300;
 }
 
 .resultbox{
-    border: 1px solid #444;
-    border-radius: 20px;
+    border-radius: 5px;
     justify-content: space-evenly;
     padding:40px 0;
     margin-bottom: 70px;
@@ -196,8 +195,7 @@ body{
 }
 
 .resultbox:hover{
-    box-shadow: 0 0 8px 2px #ff5b45;
-    border: 1px solid #ff5b45 ;
+    box-shadow: 0 0 8px 2px #cc9922;
     transition-duration: 0.3s;
 }
 
