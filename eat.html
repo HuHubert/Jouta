@@ -54,8 +54,8 @@
     <div class="container-fluid filter" id="filter">
         <div class="container text-white">
             <form class="top_form">
-                <div class="form-row">
-                    <div class="col">
+                <!--<div class="form-row">
+                     <div class="col">
                         <input type="text" class="form-control" placeholder="請輸入地區">
                     </div>
                     <div class="col">
@@ -77,9 +77,17 @@
                                 <a class="dropdown-item" href="#">已結束</a>
                             </div>
                         </div>
-                    </div>
-                    <button type="submit" class="btn btnContent">搜尋</button>
+                    </div> 
+                <button type="submit" class="btn btnContent">搜尋</button>
+        </div>-->
+                <div class="input-group">
+                    <input type="text" id="search" placeholder="輸入任何關鍵字..." autocomplete="off">
+                    <label for="search"><i class="fas fa-search"></i></label>
                 </div>
+
+                <div class="suggestion-list hidden">
+                </div>
+
             </form>
         </div>
     </div>
