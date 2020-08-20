@@ -23,6 +23,10 @@ body{
     transform: translate(0%,250%);
 }
 
+.form-row{
+    margin: 0;
+}
+
 .col input{
     width:100%;
 }
@@ -35,7 +39,7 @@ body{
     margin: 100px auto;
 }
 
-.sortby{
+.sidebar{
     width: 30%;
 }
 
@@ -192,4 +196,28 @@ hr{
 
 .modalContentLeft p,.modalContentRight p{
     height: 60px;
+}
+
+.btn-outline-warning{
+    border-color: #f5be2e;
+    color: black;
+    background-color: #ffee99;
+}
+
+.btn-outline-warning:hover{
+    border-color: #f5be2e;
+    color: black;
+    background-color: #fee567;
+}
+
+.sidebar>.btn-lg{
+    padding: 1rem 2rem;
+}
+
+.spinner-border{
+    animation-duration: 1s;
+}
+
+.loadicon{
+    padding: 0 50%;
 }
