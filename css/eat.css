@@ -1,5 +1,6 @@
 body{
     background-color: #fffef4;
+    overscroll-behavior-y: contain;
 }
 
 .nav-eat{
@@ -13,9 +14,9 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; */
+    /* box-shadow: 10px 10px 30px #fffbdf; */
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px 0;
-    /* box-shadow: 10px 10px 30px #fffbdf; */
 }
 
 .top_form{
@@ -37,7 +38,7 @@ body{
 }
 
 .quests{
-    margin: 100px auto;
+    margin: 40px auto 100px auto;
 }
 
 .sidebar{
@@ -53,7 +54,19 @@ p{
 }
 
 .btnContent{
-    background-color: #f5be2e;
+    background-color: #fee567;
+    border:1px solid  #e8e8e8;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+
+    -webkit-box-shadow: 0px 0px 8px #f5be2e;
+       -moz-box-shadow: 0px 0px 8px #f5be2e;
+            box-shadow: 0px 0px 8px #f5be2e;
+}
+
+.btnContent:hover{
+    background-color: #ffee99;
 }
 
 .questbox{
@@ -202,17 +215,17 @@ hr{
 .btn-outline-warning{
     border-color: #f5be2e;
     color: black;
-    background-color: #ffee99;
+    background-color: #fff6cc;
 }
 
 .btn-outline-warning:hover{
     border-color: #f5be2e;
     color: black;
-    background-color: #fee567;
+    background-color: #ffee99;
 }
 
 .sidebar>.btn-lg{
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
 }
 
 .spinner-border{
@@ -223,6 +236,15 @@ hr{
     padding: 0 50%;
 }
 
+input,select,textarea{
+    padding: 8px 30px 8px 12px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    transition: all 0.2s ease;
+
+}
+
+/* searchbar */
 form {
     max-width: 80%;
     margin: 0 auto;
@@ -242,25 +264,25 @@ label {
     transition: all 0.2s ease;
 }
   
-input {
+#search {
     width: 100%;
     padding: 8px 30px 8px 12px;
     border: 2px solid rgba(0, 0, 0, 0.08);
     outline: none;
     font-size: 16px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.06);
-    color: #f5be2e;
+    color: rgba(0, 0, 0, 0.8);
     font-weight: bold;
     letter-spacing: 1px;
     border-radius: 1px;
     transition: all 0.2s ease;
 }
   
-input:focus {
+#search:focus {
     border-color: #f5be2e;
 }
   
-input:focus + label {
+#search:focus + label {
     transform: scale(1.05) translatey(-50%);
     color: #f5be2e;
 }
@@ -323,3 +345,4 @@ input:focus + label {
     margin-right: 12px;
     color: #f5be2e;
 }
+/* searchbar end */

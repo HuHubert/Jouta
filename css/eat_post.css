@@ -31,14 +31,19 @@ hr{
     margin: 20px 0;
 }
 
+.memberAvatar{
+    position: relative;
+}
+
 .memberAvatar img{
+    position: absolute;
     width: 150px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: fixed;
     border: 5px double #ff5b45;
     border-radius: 50%;
-    margin: 0 auto;
+    margin: 10px 0;
 }
 
 .title_name,.memberRating{
