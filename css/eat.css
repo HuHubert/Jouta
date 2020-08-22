@@ -42,15 +42,11 @@ body{
 }
 
 .sidebar{
-    width: 30%;
+    /* width: 30%; */
 }
 
 .btn-block+.btn-block{
     margin-top: 0;
-}
-
-p{
-    margin-block-end: 0;
 }
 
 .btnContent{
@@ -70,7 +66,7 @@ p{
 }
 
 .questbox{
-    width: 70%;
+    /* width: 70%; */
 }
 
 .qBoxblock:hover{
@@ -200,8 +196,8 @@ hr{
     padding-right: 0px!important;
 }
 
-.modal-body input{
-    margin: 10px !important;
+#modalTitle{
+    width: 1000px;
 }
 
 .change-max-width-1400 {
@@ -212,13 +208,13 @@ hr{
     height: 60px;
 }
 
-.btn-outline-warning{
+.btn-outline-warning,.btnSocial-warning{
     border-color: #f5be2e;
     color: black;
     background-color: #fff6cc;
 }
 
-.btn-outline-warning:hover{
+.btn-outline-warning:hover,.btnSocial-warning:hover{
     border-color: #f5be2e;
     color: black;
     background-color: #ffee99;
@@ -241,7 +237,12 @@ input,select,textarea{
     border: 2px solid rgba(0, 0, 0, 0.3);
     border-radius: 3px;
     transition: all 0.2s ease;
+}
 
+textarea{
+    width:980px;
+    height:220px;
+    vertical-align:top;
 }
 
 /* searchbar */
@@ -287,41 +288,6 @@ label {
     color: #f5be2e;
 }
   
-#apps {
-    margin-top: 42px;
-}
-  
-.app {
-    display: inline-block;
-    width: 20%;
-    margin: 0 2.2% 24px;
-    padding: 12px 6px;
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 3px;
-    transition: all 0.2s ease;
-}
-  
-.app:hover {
-    border-color: rgba(255, 255, 255, 0.5);
-}
-  
-.app i {
-    font-size: 2.4em;
-    color: #fff;
-}
-  
-.app p {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 14px;
-    margin-top: 6px;
-    transition: 0.2s all ease;
-}
-  
-.app:hover p {
-    color: rgba(255, 255, 255, 0.8);
-}
-  
 .suggestion-list {
     background-color: #fff;
     padding: 18px 24px 6px 12px;
@@ -346,3 +312,41 @@ label {
     color: #f5be2e;
 }
 /* searchbar end */
+
+@media (max-width:992px){
+    .qBoxblock{
+        transition-duration: 0s;
+        margin: 0;
+    }
+
+    .qBoxblock:hover{
+        box-shadow: 0px 0px 4px 2px rgb(200, 200, 200);
+        transition-duration: 0s;
+    }
+
+    #modalTitle{
+        width: 100%;
+    }
+
+    .modal-body p,.modal-body input{
+        width: 100%;
+    }
+
+    .modal-body textarea{
+        width: 750px;
+    }
+}
+
+@media(max-width:768px){
+
+
+    .modal-body textarea{
+        width:550px;
+    }
+}
+
+@media(max-width:576px){
+    .modal-body textarea,.modal-body p,.modal-body input{
+        width:340px;
+    }
+}
