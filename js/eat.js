@@ -6,4 +6,6 @@
     $(".popularMemberbtn").click(function () {
         $(".popularAvatar").toggle('fast');
     });
+
+
 })();
