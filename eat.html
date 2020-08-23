@@ -54,8 +54,8 @@
     <div class="container-fluid filter" id="filter">
         <div class="container text-white">
             <form class="top_form">
-                <div class="form-row">
-                    <div class="col">
+                <!--<div class="form-row">
+                     <div class="col">
                         <input type="text" class="form-control" placeholder="請輸入地區">
                     </div>
                     <div class="col">
@@ -77,9 +77,17 @@
                                 <a class="dropdown-item" href="#">已結束</a>
                             </div>
                         </div>
-                    </div>
-                    <button type="submit" class="btn btnContent">搜尋</button>
+                    </div> 
+                <button type="submit" class="btn btnContent">搜尋</button>
+        </div>-->
+                <div class="input-group">
+                    <input type="text" id="search" placeholder="輸入任何關鍵字..." autocomplete="off">
+                    <!-- <label for="search"><i class="fas fa-search"></i> --></label>
                 </div>
+
+                <div class="suggestion-list hidden">
+                </div>
+
             </form>
         </div>
     </div>
@@ -87,20 +95,54 @@
     <!-- main_quest -->
     <div class="container-fluid">
         <div class="container quests">
-            <div class="d-flex">
+            <div class="row">
                 <!-- 篩選器 -->
-                <div class="sortby">
-                    <button type="button" class="btn btnContent btn-lg btn-block mb-5" id="sortbyitems"
+                <div class="sidebar col-xl-3 col-lg-3">
+                    <button type="button" class="btn btnContent btn-lg btn-block mb-3" id="sidebaritems"
                         data-toggle="modal" data-target="#JouModal">Jou團去!</button>
-                    <p class="mb-3" id="sortbyitems">搜尋結果排序根據</p>
-                    <button type="button" class="btn btn-outline-info btn-lg btn-block mb-3"
-                        id="sortbyitems">時間</button>
-                    <button type="button" class="btn btn-outline-info btn-lg btn-block mb-3"
-                        id="sortbyitems">地區</button>
-                    <button type="button" class="btn btn-outline-info btn-lg btn-block mb-3"
-                        id="sortbyitems">評分</button>
-                    <button type="button" class="btn btn-outline-info btn-lg btn-block mb-3"
-                        id="sortbyitems">瀏覽次數</button>
+
+                    <div class="filterbtn">
+                        <p class="mb-3" id="sidebaritems">▽ 搜尋結果排序根據</p>
+                    </div>
+
+                    <button type="button" class="btn btn-outline-warning btn-block btn-sm mb-3"
+                        id="sidebaritems"><span><img src="./images/01.png" alt="">熱門</span></button>
+                    <button type="button" class="btn btn-outline-warning btn-block btn-sm mb-3"
+                        id="sidebaritems"><span><img src="./images/02.png" alt="">最新</span></button>
+                    <button type="button" class="btn btn-outline-warning btn-block btn-sm mb-3"
+                        id="sidebaritems"><span><img src="./images/03.png" alt="">地區</span></button>
+                    <button type="button" class="btn btn-outline-warning btn-block btn-sm mb-3"
+                        id="sidebaritems"><span><img src="./images/04.png" alt="">預算</span></button>
+                    <button type="button" class="btn btn-outline-warning btn-block btn-sm mb-3"
+                        id="sidebaritems"><span><img src="./images/05.png" alt="">讚數</span></button>
+                    <button type="button" class="btn btn-outline-warning btn-block btn-sm mb-3"
+                        id="sidebaritems"><span><img src="./images/06.png" alt="">瀏覽次數</span></button>
+                    <button type="button" class="btn btn-outline-warning btn-block btn-sm mb-3"
+                        id="sidebaritems"><span><img src="./images/07.png" alt="">活動日期</span></button>
+                    <button type="button" class="btn btn-outline-warning btn-block btn-sm mb-3"
+                        id="sidebaritems"><span><img src="./images/08.png" alt="">入團截止</span></button>
+
+                    <div class="popularMemberbtn">
+                        <p class="mb-3" id="sidebaritems">▽ 人氣團主</p>
+                    </div>
+
+                    <div class="d-flex mb-3">
+                        <li class="popularAvatar mr-3" style="list-style-type:none;cursor: pointer;"><img
+                                src="./images/09.png" alt="">
+                        </li>
+                        <li class="popularAvatar mr-3" style="list-style-type:none;cursor: pointer;"><img
+                                src="./images/09.png" alt="">
+                        </li>
+                        <li class="popularAvatar mr-3" style="list-style-type:none;cursor: pointer;"><img
+                                src="./images/09.png" alt="">
+                        </li>
+                        <li class="popularAvatar mr-3" style="list-style-type:none;cursor: pointer;"><img
+                                src="./images/09.png" alt="">
+                        </li>
+                        <li class="popularAvatar mr-3" style="list-style-type:none;cursor: pointer;"><img
+                                src="./images/09.png" alt="">
+                        </li>
+                    </div>
                 </div>
 
                 <!-- jou modal head -->
@@ -118,27 +160,30 @@
                             <div class="modal-body">
                                 <!-- jou modal content -->
                                 <div class="container">
-                                    <p><img src="./images/19.png" class="mb-1" alt="">標題：<input type="text"
-                                            name="UserName" style="width:90%"></p>
-                                    <div class="m-0 mb-3 modalContent d-flex justify-content-around">
-                                        <div class="modalContentLeft">
-                                            <p><img src="./images/08.png" class="mb-1" alt="">旅遊開始日期： <input type="date"
-                                                    name="UserName"></p>
-                                            <p><img src="./images/08.png" class="mb-1" alt="">旅遊結束日期： <input type="date"
-                                                    name="UserName"></p>
-                                            <p><img src="./images/08.png" class="mb-1" alt="">入團截止日期： <input type="date"
-                                                    name="UserName"></p>
-                                            <p><img src="./images/20.png" class="mb-1" alt="">團圖：<input Type="File"
-                                                    Name="YouFile"></p>
+                                    <div class="m-0 mb-3 modalContent row justify-content-around">
+                                        <p><img src="./images/19.png" class="mb-1" alt="">標題：<input type="text"
+                                                name="UserName" id="modalTitle"></p>
+                                    </div>
+
+                                    <div class="m-0 mb-3 modalContent row justify-content-around">
+                                        <div class="modalContentLeft mb-1">
+                                            <p><img src="./images/08.png" class="mb-1" alt="">旅遊開始日期： <input
+                                                    class="mb-1" type="date" name="UserName"></p>
+                                            <p><img src="./images/08.png" class="mb-1" alt="">旅遊結束日期： <input
+                                                    class="mb-1" type="date" name="UserName"></p>
+                                            <p><img src="./images/08.png" class="mb-1" alt="">入團截止日期： <input
+                                                    class="mb-1" type="date" name="UserName"></p>
+                                            <p><img src="./images/20.png" class="mb-1" alt="">團圖：<input class="mb-1"
+                                                    Type="File" Name="YouFile"></p>
                                         </div>
                                         <div class="modalContentRight">
-                                            <p><img src="./images/04.png" class="mb-1" alt="">預算：<input type="text"
-                                                    name="UserName"></p>
-                                            <p><img src="./images/17.png" class="mb-1" alt="">分類：<input type="text"
-                                                    name="UserName"></p>
-                                            <p><img src="./images/13.png" class="mb-1" alt="">標籤：<input type="text"
-                                                    name="UserName"></p>
-                                            <p class="pt-2"><img src="./images/03.png" class="mb-1" alt="">
+                                            <p><img src="./images/04.png" class="mb-1" alt="">預算：<input class="mb-1"
+                                                    type="text" name="UserName"></p>
+                                            <p><img src="./images/17.png" class="mb-1" alt="">分類：<input class="mb-1"
+                                                    type="text" name="UserName"></p>
+                                            <p><img src="./images/13.png" class="mb-1" alt="">標籤：<input class="mb-1"
+                                                    type="text" name="UserName"></p>
+                                            <p><img src="./images/03.png" class="mb-1" alt="">
                                                 地區：
                                                 <select name="" id="">
                                                     <option value="">北部</option>
@@ -151,10 +196,9 @@
                                     </div>
                                 </div>
 
-                                <div class="row align-items-center">
+                                <div class="m-0 mb-3 modalContent row justify-content-around">
                                     <div class="mx-auto mb-3">
-                                        內容：<textarea name="Content"
-                                            style="width:1000px;height:220px;vertical-align:top;"></textarea>
+                                        內容：<textarea name="Content"></textarea>
                                     </div>
                                 </div>
 
@@ -172,13 +216,13 @@
                 </div>
 
                 <!-- 活動清單 -->
-                <div class="questbox">
+                <div class="questbox col-xl-9 col-lg-9 col-md">
                     <!-- 活動格 -->
-                    <div class="qBoxblock d-flex mb-4">
+                    <div class="qBoxblock mb-4">
                         <!-- box左 -->
-                        <div class="qEvent">
+                        <div class="qEvent col-lg-5 col-md-6 col-sm-6">
                             <!-- 團主 -->
-                            <div class="eMember d-flex">
+                            <div class="eMember">
                                 <!-- 團主頭貼 -->
                                 <div class="memberAvatar mr-1">
                                     <img src="images/memberAvatar.jpg" alt="">
@@ -199,7 +243,7 @@
                             </div>
                         </div>
                         <!-- box右 -->
-                        <div class="qContent">
+                        <div class="qContent col-lg-7 col-md-6 col-sm-6">
                             <!-- 標題 -->
                             <div class="cTitle mb-1">去菜市場看黑人吃水果! </div>
                             <!-- 時間 -->
@@ -212,203 +256,115 @@
                                 possimus rerum accusantium facere atque totam, voluptatibus labore excepturi...<a
                                     href="#">(read more)</a></div>
                             <!-- 社交按鈕 -->
-                            <div class="cSocial btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn btn-outline-info">關注</button>
-                                <button type="button" class="btn btn-outline-info">分享</button>
-                                <button type="button" class="btn btn-outline-info">留言</button>
+                            <div class="cSocial btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btnSocial-warning">關注</button>
+                                <button type="button" class="btn btnSocial-warning">分享</button>
+                                <button type="button" class="btn btnSocial-warning">留言</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 活動格 -->
+                    <div class="qBoxblock mb-4">
+                        <!-- box左 -->
+                        <div class="qEvent col-lg-5 col-md-6 col-sm-6">
+                            <!-- 團主 -->
+                            <div class="eMember">
+                                <!-- 團主頭貼 -->
+                                <div class="memberAvatar mr-1">
+                                    <img src="images/memberAvatar.jpg" alt="">
+                                </div>
+                                <!-- 團主稱號&名字 -->
+                                <div class="memberInfo">
+                                    <!-- 團主稱號 -->
+                                    <div class="memberTitle">一天八餐</div>
+                                    <!-- 團主名 -->
+                                    <div class="memberName">no face</div>
+                                </div>
+                                <!-- 團主評分 -->
+                                <div class="memberRating">☆4.7</div>
+                            </div>
+                            <!-- 活動圖 -->
+                            <div class="eEventPic">
+                                <img src="images/foods.jpg" alt="">
+                            </div>
+                        </div>
+                        <!-- box右 -->
+                        <div class="qContent col-lg-7 col-md-6 col-sm-6">
+                            <!-- 標題 -->
+                            <div class="cTitle mb-1">去菜市場看黑人吃水果! </div>
+                            <!-- 時間 -->
+                            <div class="cStartTime mb-1">．2020.08.19 17:30</div>
+                            <!-- 地點 -->
+                            <div class="cPosition">．黃昏市場(地圖)</div>
+                            <hr>
+                            <!-- 簡易資訊 -->
+                            <div class="cInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam non
+                                possimus rerum accusantium facere atque totam, voluptatibus labore excepturi...<a
+                                    href="#">(read more)</a></div>
+                            <!-- 社交按鈕 -->
+                            <div class="cSocial btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btnSocial-warning">關注</button>
+                                <button type="button" class="btn btnSocial-warning">分享</button>
+                                <button type="button" class="btn btnSocial-warning">留言</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 活動格 -->
+                    <div class="qBoxblock mb-4">
+                        <!-- box左 -->
+                        <div class="qEvent col-lg-5 col-md-6 col-sm-6">
+                            <!-- 團主 -->
+                            <div class="eMember">
+                                <!-- 團主頭貼 -->
+                                <div class="memberAvatar mr-1">
+                                    <img src="images/memberAvatar.jpg" alt="">
+                                </div>
+                                <!-- 團主稱號&名字 -->
+                                <div class="memberInfo">
+                                    <!-- 團主稱號 -->
+                                    <div class="memberTitle">一天八餐</div>
+                                    <!-- 團主名 -->
+                                    <div class="memberName">no face</div>
+                                </div>
+                                <!-- 團主評分 -->
+                                <div class="memberRating">☆4.7</div>
+                            </div>
+                            <!-- 活動圖 -->
+                            <div class="eEventPic">
+                                <img src="images/foods.jpg" alt="">
+                            </div>
+                        </div>
+                        <!-- box右 -->
+                        <div class="qContent col-lg-7 col-md-6 col-sm-6">
+                            <!-- 標題 -->
+                            <div class="cTitle mb-1">去菜市場看黑人吃水果! </div>
+                            <!-- 時間 -->
+                            <div class="cStartTime mb-1">．2020.08.19 17:30</div>
+                            <!-- 地點 -->
+                            <div class="cPosition">．黃昏市場(地圖)</div>
+                            <hr>
+                            <!-- 簡易資訊 -->
+                            <div class="cInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam non
+                                possimus rerum accusantium facere atque totam, voluptatibus labore excepturi...<a
+                                    href="#">(read more)</a></div>
+                            <!-- 社交按鈕 -->
+                            <div class="cSocial btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btnSocial-warning">關注</button>
+                                <button type="button" class="btn btnSocial-warning">分享</button>
+                                <button type="button" class="btn btnSocial-warning">留言</button>
                             </div>
                         </div>
                     </div>
 
-                    <!-- 活動格 -->
-                    <div class="qBoxblock d-flex mb-4">
-                        <!-- box左 -->
-                        <div class="qEvent">
-                            <!-- 團主 -->
-                            <div class="eMember d-flex">
-                                <!-- 團主頭貼 -->
-                                <div class="memberAvatar mr-1">
-                                    <img src="images/memberAvatar.jpg" alt="">
-                                </div>
-                                <!-- 團主稱號&名字 -->
-                                <div class="memberInfo">
-                                    <!-- 團主稱號 -->
-                                    <div class="memberTitle">一天八餐</div>
-                                    <!-- 團主名 -->
-                                    <div class="memberName">no face</div>
-                                </div>
-                                <!-- 團主評分 -->
-                                <div class="memberRating">☆4.7</div>
-                            </div>
-                            <!-- 活動圖 -->
-                            <div class="eEventPic">
-                                <img src="images/foods.jpg" alt="">
-                            </div>
-                        </div>
-                        <!-- box右 -->
-                        <div class="qContent">
-                            <!-- 標題 -->
-                            <div class="cTitle mb-1">去菜市場看黑人吃水果! </div>
-                            <!-- 時間 -->
-                            <div class="cStartTime mb-1">．2020.08.19 17:30</div>
-                            <!-- 地點 -->
-                            <div class="cPosition">．黃昏市場(地圖)</div>
-                            <hr>
-                            <!-- 簡易資訊 -->
-                            <div class="cInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam non
-                                possimus rerum accusantium facere atque totam, voluptatibus labore excepturi...<a
-                                    href="#">(read more)</a></div>
-                            <!-- 社交按鈕 -->
-                            <div class="cSocial btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn btn-outline-info">關注</button>
-                                <button type="button" class="btn btn-outline-info">分享</button>
-                                <button type="button" class="btn btn-outline-info">留言</button>
-                            </div>
+                    <!-- loading icon -->
+                    <div class="loadicon">
+                        <div class="spinner-border text-warning" role="status">
+                            <span class="sr-only">Loading...</span>
                         </div>
                     </div>
 
-                    <!-- 活動格 -->
-                    <div class="qBoxblock d-flex mb-4">
-                        <!-- box左 -->
-                        <div class="qEvent">
-                            <!-- 團主 -->
-                            <div class="eMember d-flex">
-                                <!-- 團主頭貼 -->
-                                <div class="memberAvatar mr-1">
-                                    <img src="images/memberAvatar.jpg" alt="">
-                                </div>
-                                <!-- 團主稱號&名字 -->
-                                <div class="memberInfo">
-                                    <!-- 團主稱號 -->
-                                    <div class="memberTitle">一天八餐</div>
-                                    <!-- 團主名 -->
-                                    <div class="memberName">no face</div>
-                                </div>
-                                <!-- 團主評分 -->
-                                <div class="memberRating">☆4.7</div>
-                            </div>
-                            <!-- 活動圖 -->
-                            <div class="eEventPic">
-                                <img src="images/foods.jpg" alt="">
-                            </div>
-                        </div>
-                        <!-- box右 -->
-                        <div class="qContent">
-                            <!-- 標題 -->
-                            <div class="cTitle mb-1">去菜市場看黑人吃水果! </div>
-                            <!-- 時間 -->
-                            <div class="cStartTime mb-1">．2020.08.19 17:30</div>
-                            <!-- 地點 -->
-                            <div class="cPosition">．黃昏市場(地圖)</div>
-                            <hr>
-                            <!-- 簡易資訊 -->
-                            <div class="cInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam non
-                                possimus rerum accusantium facere atque totam, voluptatibus labore excepturi...<a
-                                    href="#">(read more)</a></div>
-                            <!-- 社交按鈕 -->
-                            <div class="cSocial btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn btn-outline-info">關注</button>
-                                <button type="button" class="btn btn-outline-info">分享</button>
-                                <button type="button" class="btn btn-outline-info">留言</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 活動格 -->
-                    <div class="qBoxblock d-flex mb-4">
-                        <!-- box左 -->
-                        <div class="qEvent">
-                            <!-- 團主 -->
-                            <div class="eMember d-flex">
-                                <!-- 團主頭貼 -->
-                                <div class="memberAvatar mr-1">
-                                    <img src="images/memberAvatar.jpg" alt="">
-                                </div>
-                                <!-- 團主稱號&名字 -->
-                                <div class="memberInfo">
-                                    <!-- 團主稱號 -->
-                                    <div class="memberTitle">一天八餐</div>
-                                    <!-- 團主名 -->
-                                    <div class="memberName">no face</div>
-                                </div>
-                                <!-- 團主評分 -->
-                                <div class="memberRating">☆4.7</div>
-                            </div>
-                            <!-- 活動圖 -->
-                            <div class="eEventPic">
-                                <img src="images/foods.jpg" alt="">
-                            </div>
-                        </div>
-                        <!-- box右 -->
-                        <div class="qContent">
-                            <!-- 標題 -->
-                            <div class="cTitle mb-1">去菜市場看黑人吃水果! </div>
-                            <!-- 時間 -->
-                            <div class="cStartTime mb-1">．2020.08.19 17:30</div>
-                            <!-- 地點 -->
-                            <div class="cPosition">．黃昏市場(地圖)</div>
-                            <hr>
-                            <!-- 簡易資訊 -->
-                            <div class="cInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam non
-                                possimus rerum accusantium facere atque totam, voluptatibus labore excepturi...<a
-                                    href="#">(read more)</a></div>
-                            <!-- 社交按鈕 -->
-                            <div class="cSocial btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn btn-outline-info">關注</button>
-                                <button type="button" class="btn btn-outline-info">分享</button>
-                                <button type="button" class="btn btn-outline-info">留言</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 活動格 -->
-                    <div class="qBoxblock d-flex mb-4">
-                        <!-- box左 -->
-                        <div class="qEvent">
-                            <!-- 團主 -->
-                            <div class="eMember d-flex">
-                                <!-- 團主頭貼 -->
-                                <div class="memberAvatar mr-1">
-                                    <img src="images/memberAvatar.jpg" alt="">
-                                </div>
-                                <!-- 團主稱號&名字 -->
-                                <div class="memberInfo">
-                                    <!-- 團主稱號 -->
-                                    <div class="memberTitle">一天八餐</div>
-                                    <!-- 團主名 -->
-                                    <div class="memberName">no face</div>
-                                </div>
-                                <!-- 團主評分 -->
-                                <div class="memberRating">☆4.7</div>
-                            </div>
-                            <!-- 活動圖 -->
-                            <div class="eEventPic">
-                                <img src="images/foods.jpg" alt="">
-                            </div>
-                        </div>
-                        <!-- box右 -->
-                        <div class="qContent">
-                            <!-- 標題 -->
-                            <div class="cTitle mb-1">去菜市場看黑人吃水果! </div>
-                            <!-- 時間 -->
-                            <div class="cStartTime mb-1">．2020.08.19 17:30</div>
-                            <!-- 地點 -->
-                            <div class="cPosition">．黃昏市場(地圖)</div>
-                            <hr>
-                            <!-- 簡易資訊 -->
-                            <div class="cInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam non
-                                possimus rerum accusantium facere atque totam, voluptatibus labore excepturi...<a
-                                    href="#">(read more)</a></div>
-                            <!-- 社交按鈕 -->
-                            <div class="cSocial btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn btn-outline-info">關注</button>
-                                <button type="button" class="btn btn-outline-info">分享</button>
-                                <button type="button" class="btn btn-outline-info">留言</button>
-                            </div>
-                        </div>
-                    </div>
                     <!-- 換頁 -->
-                    <div class="switchPage">
+                    <!-- <div class="switchPage">
                         <ul class="pagination justify-content-end">
                             <li class="page-item disabled">
                                 <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
@@ -420,14 +376,14 @@
                                 <a class="page-link" href="#">Next</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </div>
 
     <!-- 熱門團主 -->
-    <div class="container-fluid popularMemberDiv">
+    <!-- <div class="container-fluid popularMemberDiv">
         <div class="popularTitle">熱門團主</div>
         <div class="container popularMember justify-content-between d-flex pb-5">
             <div class="memberBlock">
@@ -470,7 +426,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- footer -->
@@ -490,6 +446,7 @@
         crossorigin="anonymous"></script>
 
     <script src="js/navbar.js"></script>
+    <script src="js/eat.js"></script>
 </body>
 
 </html>
