@@ -1,10 +1,6 @@
 (function($) {
  
     var SliceSlider = {
-      
-      /**
-       * Settings Object
-       */
       settings: {
         delta:              0,
         currentSlideIndex:  0,

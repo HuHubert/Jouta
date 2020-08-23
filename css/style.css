@@ -3,7 +3,6 @@
 *{
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
 }
 
 *, *:before, *:after {
@@ -17,8 +16,13 @@ body{
 
 html{
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 500;
     overflow-x: hidden;
+}
+
+a{
+    color: black;
+    font-weight: bolder;
 }
 
 .container-fluid{
@@ -29,11 +33,6 @@ html{
 .navbar{
     z-index: 99;
     background-color: #fffbdf;
-}
-
-a{
-    color: black;
-    font-weight: bolder;
 }
 
 .nav-item{
@@ -63,12 +62,8 @@ a{
 .footer{
     border-radius: 75% 75%  0% 0%;
     bottom: 0;
-    position: fixed;
     font-size: 16px;
     background-color: #fffbdf;
     color: black;
-}
-
-.footer{
     border-top: 3px solid #f5be2e;
 }

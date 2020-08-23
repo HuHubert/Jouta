@@ -32,7 +32,7 @@ a:hover{
     letter-spacing: 1rem;
 }
 
-.slogan1{
+.slogan > p{
     line-height: 2.5;
     font-size: 1.2rem;
     letter-spacing: 1rem;
@@ -44,14 +44,14 @@ a:hover{
     color: #fffc35;
 }
 
-.slogan1,.slogan2{
+.slogan > p,.slogan2{
     font-family: 'Noto Sans TC', sans-serif;
     text-transform: uppercase;
     text-shadow: 5px 5px 5px rgba(0,0,0,0.8);
     transition-duration: 1s;
 }
 
-.slogan1:hover{
+.slogan > p:hover{
     transition-duration: 1s;
     letter-spacing: 1.1rem;
 }
@@ -62,14 +62,11 @@ a:hover{
     font-size: 4.6rem;
 }
 
-.btn{
-    box-shadow: 1px 1px 3px rgba(20,20,20,0.5);
+.btn,.btn:hover{
     transition-duration: .5s;
 }
 
 .btn:hover{
-    box-shadow: 1px 1px 9px rgba(80,80,80,0.5);
-    transition-duration: .5s;
     background-color: #fee567;
 }
 
@@ -114,7 +111,7 @@ a:hover{
     position: absolute;
     left: 50%;  /*置中*/
     top: 50%;   /*置中*/
-    transform: translate(-50%,60%); /*置中*/
+    transform: translate(-50%,70%); /*置中*/
     max-width: 1000px;
 }
 
@@ -349,11 +346,6 @@ a.socials-item {
     color: #c82929;
 }
 
-.telegram {
-    color: #2ca5e0;
-}
-
-
 a.socials-item{
     transition-duration: 0.3s;
 }
@@ -394,4 +386,37 @@ img {
     height: auto;
     max-width: 100%;
     vertical-align: middle;
+}
+
+@media screen and (max-width: 900px){
+    .slogan2{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .slogan2:hover{
+        font-size: 2.5rem;
+    }
+    .slogan > p:hover{
+        letter-spacing: .6rem;
+        font-size: .8rem;
+    }
+    .slogan > p{
+        font-size: .8rem;
+        text-align: center;
+        letter-spacing: .6rem;
+        line-height: 2em;
+    }
+
+    /*  table Search*/
+    .tabs{
+        max-width: 100%;
+        transform: translate(-50%,-20%);
+    }
+    .table .time{
+        width: 80%;
+    }
+    .tabs input[type="radio"]:checked + label{
+        width: 30%;
+        padding: 5px;
+    }
 }
