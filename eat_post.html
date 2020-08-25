@@ -54,21 +54,35 @@
     <!-- main_post -->
     <div class="container-fluid eventPic"></div>
     <div class="container mainBlock">
-        <div class="memberInfo d-flex justify-content-between">
-            <div class="infoLeft col justify-content-between">
-                <div class="memberAvatar"><img src="images/memberAvatar.jpg"></div>
-                <div class="title_name">
+        <!-- 會員資訊 -->
+        <div class="memberInfo row justify-content-between">
+            <div class="infoLeft row col-10 col-sm-11">
+                <div class="memberAvatar col-3 col-sm-4">
+                    <img src="images/memberAvatar.jpg">
+                </div>
+                <div class="title_name col-9 col-sm-8">
                     <div class="memberTitle">一天八餐</div>
                     <div class="memberName">no face</div>
                 </div>
             </div>
-            <div class="infoRight col">
+            <div class="infoRight col-2 col-sm-1">
                 <div class="memberRating"><span>☆4.7</span></div>
             </div>
         </div>
         <hr>
+        <!-- 揪團資訊(讚數、預算...etc) -->
+        <div class="jouInfo row">
+            <div class="jInfo info1 col-2"><span><img src="./images/04.png" alt="">30000</span></div>
+            <div class="jInfo info2 col-2"><span><img src="./images/05.png" alt="">50</span></div>
+            <div class="jInfo info3 col-2"><span><img src="./images/06.png" alt="">300</span></div>
+            <div class="jInfo info4 col-2"><span><img src="./images/21.png" alt="">4</span></div>
+            <div class="jInfo info5 col-2"><button class="btn-warning">關注</button></div>
+            <div class="jInfo info6 col-2"><button class="btn-join">申請加入</button></div>
+        </div>
+
+        <hr>
         <div class="eatTitle">去菜市場看黑人吃水果!</div>
-        <div class="eatContent d-flex">
+        <div class="eatContent row">
             <div class="cParagraph col-9 pr-3">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt reprehenderit, odio sequi, dicta
                 accusamus dolorem doloremque esse excepturi nam cumque veritatis accusantium officiis quis modi quas
@@ -94,12 +108,12 @@
                 reprehenderit, odio sequi, dicta
             </div>
 
-            <div class="cInfo">
+            <div class="cInfo col-3">
                 <div class="createTime">活動建立時間：<p>2020.08.17 12:00:00</p>
                 </div>
-                <div class="startTime">活動開始時間：<p>2020.08.19 16:30:00</p>
-                </div>
                 <div class="stopTime">截止報名時間：<p>2020.08.19 11:00:00</p>
+                </div>
+                <div class="startTime">活動開始時間：<p>2020.08.19 16:30:00</p>
                 </div>
                 <div class="position">地點：<p>菜市場</p>
                 </div>
