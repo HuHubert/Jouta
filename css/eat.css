@@ -45,10 +45,6 @@ body{
     margin: 40px auto 100px auto;
 }
 
-.sidebar{
-    /* width: 30%; */
-}
-
 .btn-block+.btn-block{
     margin-top: 0;
 }
@@ -69,10 +65,6 @@ body{
     background-color: #ffee99;
 }
 
-.questbox{
-    /* width: 70%; */
-}
-
 .qBoxblock:hover{
     box-shadow: 0px 0px 12px 2px #cc9922;
     transition-duration: 0.5s;
@@ -87,10 +79,6 @@ body{
     transition-duration: 1s;
     display: flex;
     height: 400px;
-}
-
-.qEvent{
-    /* width: 40%; */
 }
 
 .eMember{
@@ -389,9 +377,5 @@ label {
 
     .cStartTime,.cPosition,.cInfo{
         font-size: small;
-    }
-
-    .cSocial{
-        
     }
 }
