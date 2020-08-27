@@ -3,6 +3,42 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.level0 {
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0px auto;
+}
+
+.level1 {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 5px auto;
+}
+
+.level2 {
+  font-size: 20px;
+  line-height: 30px;
+  margin: 10px auto;
+}
+
+.level3 {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 15px auto;
+}
+
+.level4 {
+  font-size: 28px;
+  line-height: 40px;
+  margin: 20px auto;
+}
+
+.level5 {
+  font-size: 32px;
+  line-height: 40px;
+  margin: 25px auto;
+}
+
 body {
   background-color: #fffef4;
 }
@@ -125,8 +161,8 @@ body {
 @media screen and (max-width: 900px) {
   .tabs {
     max-width: 100%;
-    -webkit-transform: translate(-50%, -20%);
-            transform: translate(-50%, -20%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 

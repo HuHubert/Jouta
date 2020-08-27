@@ -2,7 +2,43 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-$width : 100%;
+$baseSize: 12px;
+$baseLineSize: 10px;
+$sizeLevel: 4px;
+$paddingLevel: 1.2;
+@function font($level: 0) {
+  @if $level < 0 {
+    $level: 0;
+  }
+  @return $baseSize + $sizeLevel * round($level);
+}
+
+@function rhythm($size) {
+  @return ceil($size * $paddingLevel / $baseLineSize) * $baseLineSize;
+}
+
+@mixin font($level: 1, $line-height: auto) {
+  $size: font($level);
+  $line: rhythm($size);
+
+  font-size: $size;
+  @if $line-height == auto or $line-height < $line {
+    line-height: $line;
+  } @else {
+    line-height: $line-height;
+  }
+}
+
+@function line($count: 1, $baseLineHeight: 10px) {
+  @return $baseLineHeight * $count;
+}
+
+@for $i from 0 through 5{
+  .level#{$i}{
+    @include font($i);
+    margin: line($i/2) auto;
+  }
+}
 
 
 body{
@@ -110,7 +146,7 @@ body{
     border-radius: 20px;    //*
     @media screen and (max-width: 900px){
         max-width: 100%;
-        transform: translate(-50%,-20%);      
+        transform: translate(-50%,-50%);      
     }
     >.nav-tabs{     //*
         >li{
@@ -177,11 +213,6 @@ body{
     //     }
     // }
 }
-
-// .location{
-//     width: 190px;
-// }
-
 .table{
     padding: 5px;
     width: 800px;
@@ -276,13 +307,6 @@ body{
     -webkit-line-clamp: 3;      // 想顯示的行數 lines you want to display
     -webkit-box-orient: vertical;
 }
-
-// .person{
-//     position: relative;
-//     width: 100%;
-//     flex-wrap: wrap;
-//     align-content: flex-start;
-// }
 
 .card{
     box-shadow: 3px 3px 10px #e8e8e8;
